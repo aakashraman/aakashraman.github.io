@@ -5,11 +5,14 @@
 
 ## WORK EXPERIENCE
 
+- Cybersecurity Analyst, Atlas Systems
+  
 - Cybersecurity Consultant Intern (X-Force Incident Response), IBM 
 
 - Cybersecurity Associate & Content Lead, Hevo Data Inc, Bangalore, India
 
 - Cybersecurity Research Analyst Intern, Hevo Data Inc, Bangalore, India
+  
 - Security Consultant Intern, Ramco Cements Ltd, Chennai, India
 
 
