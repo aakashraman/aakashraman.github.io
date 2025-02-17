@@ -29,6 +29,7 @@
 - **OWASP API Security Top 10, API Security Fundamentals**, APISec University (2024)
 - **Certified AppSec Practitioner (CAP), Certified Network Security Practitioner (CNSP)**, The SecOps Group (2024)
 - **Certified API Security Analyst (CASA)**, APISec University (2024)
+- **GIAC Foundational Cybersecurity Technologies (GFACT)**, SANS (2025)
 
 ---
 
@@ -52,7 +53,10 @@
 
 ## CTF
 
-- UMD CTF’24 - Rank 51.
+- SANS x WiCyS CTF’24 - Rank 1
+- Amazon x WiCyS CTF'24 - Rank 8
+- Huntress CTF 2024 - Rank 80
+- LevelEffect CTF 2024 - Rank 9
 - TryHackMe - Top 1% with 100+ rooms complete.
 - HackTheBox - Defensive Sherlocks
 - CyberDefenders – Blue Team CTFs.
