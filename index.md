@@ -1,10 +1,11 @@
 # whoami (Aakash Raman)
 
-**Cell:** +1 (240) 921-7770 | **Email:** [aakashr93@gmail.com](mailto:aakashr93@gmail.com) | [LinkedIn](https://www.linkedin.com/in/aakash-raman-66676b38/) | College Park, Maryland | LinkedIn Top Information Security Voice
+**Cell:** +1 (240) 921-7770 | **Email:** [aakashr93@gmail.com](mailto:aakashr93@gmail.com) | [LinkedIn](https://www.linkedin.com/in/aakash-raman-66676b38/) | Baltimore, Maryland | LinkedIn Top Information Security Voice
 
 
 ## WORK EXPERIENCE
-
+- Detection Engineer, Morgan Stanley
+  
 - Cybersecurity Analyst, Atlas Systems
   
 - Cybersecurity Consultant Intern (X-Force Incident Response), IBM 
@@ -18,7 +19,6 @@
 
 ## CERTIFICATIONS
 
-
 - **IBM Cybersecurity Analyst**
 - **Security+**
 - **CySA+**
@@ -30,6 +30,11 @@
 - **Certified AppSec Practitioner (CAP), Certified Network Security Practitioner (CNSP)**, The SecOps Group (2024)
 - **Certified API Security Analyst (CASA)**, APISec University (2024)
 - **GIAC Foundational Cybersecurity Technologies (GFACT)**, SANS (2025)
+- **GIAC Security Essentials (GSEC)**, SANS (2025)
+- **GIAC Certified Incident Handler (GCIH)**, SANS (2025)
+- **GIAC Critical Controls Certification (GCCC)**, SANS (2025)
+- **TryHackMe SAL1**, TryHackMe (2025)
+- **TryHackMe PT1**, TryHackMe (2025)
 
 ---
 
@@ -67,7 +72,7 @@
 ## BLOGS
 
 - **My Cybersecurity Blogs:** [https://medium.com/@araman99](https://medium.com/@araman99)
-- Currently Pursuing PJPT & CISSP on the side
+- Currently Pursuing GCFA & CISSP on the side
 
 ---
 
