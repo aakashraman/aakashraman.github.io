@@ -1,18 +1,56 @@
 <div class="link-wrapper">
     <style scoped>
+      ul.link {
+        list-style: none;
+        padding: 0;
+        margin: 1em 0;
+      }
+      
+      ul.link li {
+        margin: 0.5em 0;
+      }
+      
       ul.link a {
-        color:var(--clr-h1-and-bold);
-        text-decoration:none;
+        color: var(--clr-h1-and-bold);
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        padding: 0.5em 0.75em;
+        margin: 0.25em 0;
+        border-radius: 6px;
+        transition: all 0.2s ease;
       }
 
-      ul.link a:hover, a:focus {
+      ul.link a:hover, 
+      ul.link a:focus {
         color: var(--clr-a-text-hvr);
+        background-color: rgba(0, 0, 0, 0.05);
+        transform: translateX(4px);
+        outline: none;
+      }
+      
+      ul.link a:focus-visible {
+        outline: 2px solid var(--clr-a-text, #0366d6);
+        outline-offset: 2px;
+      }
+      
+      ul.link a svg,
+      ul.link a i {
+        margin-right: 0.5em;
+        flex-shrink: 0;
       }
     </style>
-    <ul class="link">
-      {%- for platform in site.sidebar %}
-      <!-- <li><a href="{{ platform.link }}"><i class="{{ platform.icon }}"></i> {{ platform.name }}</a></li> -->
-       <li><a href="{{ platform.link }}">{{ platform.icon }}&nbsp;{{ platform.name }}</a></li>
-      {%- endfor %}
-    </ul>
+    <nav aria-label="Social links and resources">
+      <ul class="link">
+        {%- for platform in site.sidebar %}
+        <li>
+          <a href="{{ platform.link }}" 
+             {% if platform.link starts_with 'http' %}target="_blank" rel="noopener noreferrer"{% endif %}
+             aria-label="{{ platform.name }} - Opens in new tab">
+            {{ platform.icon }}&nbsp;<span>{{ platform.name }}</span>
+          </a>
+        </li>
+        {%- endfor %}
+      </ul>
+    </nav>
   </div>

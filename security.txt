@@ -1,0 +1,11 @@
+Contact: mailto:aakashr93@gmail.com
+Expires: 2026-12-31T23:59:59.000Z
+Preferred-Languages: en
+Canonical: https://aakashraman.github.io/.well-known/security.txt
+
+# Security Policy
+# If you discover a security vulnerability, please email me at the address above.
+# I appreciate responsible disclosure and will respond promptly.
+
+# Acknowledgments
+# I appreciate security researchers who follow responsible disclosure practices.

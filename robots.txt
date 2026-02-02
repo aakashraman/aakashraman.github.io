@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://aakashraman.github.io/sitemap.xml
+
+# Disallow sensitive directories (if any exist in future)
+# Disallow: /admin/
+# Disallow: /private/

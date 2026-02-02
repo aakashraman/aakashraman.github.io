@@ -3,13 +3,150 @@
 
 @import "jekyll-theme-minimalist";
 
+/* Enhanced Image Styling */
 .img-circle {
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px; 
-    margin-bottom: 10px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px; 
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 100%;
+    height: auto;
 }
 
+.img-circle:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Improved Typography and Spacing */
+section {
+    line-height: 1.7;
+    max-width: 100%;
+}
+
+section h1, section h2, section h3 {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    scroll-margin-top: 80px; /* For smooth scroll to anchors */
+}
+
+section h2 {
+    border-bottom: 2px solid var(--clr-h1-and-bold, #333);
+    padding-bottom: 0.5em;
+    margin-top: 2.5em;
+}
+
+section h3 {
+    color: var(--clr-h1-and-bold, #333);
+    font-weight: 600;
+}
+
+section ul, section ol {
+    margin-left: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+section li {
+    margin-bottom: 0.75em;
+    line-height: 1.8;
+}
+
+section p {
+    margin-bottom: 1.2em;
+}
+
+section a {
+    color: var(--clr-a-text, #0366d6);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+section a:hover,
+section a:focus {
+    color: var(--clr-a-text-hvr, #0056b3);
+    border-bottom-color: var(--clr-a-text-hvr, #0056b3);
+    outline: none;
+}
+
+section a:focus-visible {
+    outline: 2px solid var(--clr-a-text, #0366d6);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/* Enhanced Link Styling in Sidebar */
+.link-wrapper ul.link a {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5em 0.75em;
+    margin: 0.25em 0;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.link-wrapper ul.link a:hover,
+.link-wrapper ul.link a:focus {
+    background-color: rgba(0, 0, 0, 0.05);
+    transform: translateX(4px);
+    outline: none;
+}
+
+.link-wrapper ul.link a:focus-visible {
+    outline: 2px solid var(--clr-a-text, #0366d6);
+    outline-offset: 2px;
+}
+
+/* Improved Code Blocks */
+code {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+pre {
+    overflow-x: auto;
+    padding: 1em;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+}
+
+/* Enhanced HR Styling */
+hr {
+    border: none;
+    border-top: 2px solid var(--clr-h1-and-bold, #333);
+    margin: 2.5em 0;
+    opacity: 0.3;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Focus Styles for Accessibility */
+*:focus-visible {
+    outline: 2px solid var(--clr-a-text, #0366d6);
+    outline-offset: 2px;
+}
+
+/* Improved Button/Link Interactions */
+button, 
+a[role="button"] {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Overlay Styles */
 .overlay {
   position: fixed;
   top: 0;
@@ -17,9 +154,11 @@
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
   visibility: hidden;
   opacity: 0;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
 }
 
 .overlay:target {
@@ -29,40 +168,153 @@
 
 .popup {
   margin: 70px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 5px;
-  width: 30%;
+  padding: 30px;
+  background: var(--clr-bg, #fff);
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
   position: relative;
-  transition: all 1s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 }
 
 .popup .close {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  transition: all 200ms;
-  font-size: 30px;
+  top: 15px;
+  right: 15px;
+  transition: all 0.2s ease;
+  font-size: 28px;
   font-weight: bold;
   text-decoration: none;
-  color: #333;
+  color: var(--clr-text, #333);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }
-.popup .close:hover {
+
+.popup .close:hover,
+.popup .close:focus {
   color: #06D85F;
+  background-color: rgba(0, 0, 0, 0.05);
+  outline: none;
 }
 
 .popup .content {
   padding-right: 20px;
-  max-height: 30%;
-  overflow: auto;
-  font: 15px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  max-height: 60vh;
+  overflow-y: auto;
+  font: 15px/1.6 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-@media screen and (max-width: 700px){
-  .box{
-    width: 70%;
-  }
-  .popup{
-    width: 70%;
-  }
+/* Skip Link for Accessibility */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--clr-h1-and-bold, #333);
+    color: #fff;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 100;
+    border-radius: 0 0 4px 0;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Enhanced Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    section {
+        padding: 1em;
+    }
+    
+    section h1 {
+        font-size: 1.8em;
+    }
+    
+    section h2 {
+        font-size: 1.5em;
+        margin-top: 2em;
+    }
+    
+    section h3 {
+        font-size: 1.2em;
+    }
+    
+    .img-circle {
+        max-width: 150px;
+    }
+    
+    .popup {
+        width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+    
+    .popup .content {
+        max-height: 70vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section {
+        padding: 0.75em;
+    }
+    
+    section h1 {
+        font-size: 1.5em;
+    }
+    
+    section h2 {
+        font-size: 1.3em;
+    }
+    
+    .link-wrapper ul.link a {
+        padding: 0.4em 0.6em;
+        font-size: 0.95em;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .sidebar {
+        display: none;
+    }
+    
+    section {
+        max-width: 100%;
+    }
+    
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        color: #666;
+    }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+    section a {
+        text-decoration: underline;
+    }
+    
+    .link-wrapper ul.link a {
+        border: 1px solid currentColor;
+    }
 }

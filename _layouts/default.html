@@ -6,7 +6,7 @@
 {% endcase %}
 
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: "en-US" }}" dir="ltr">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,21 +23,22 @@
     {% include head-custom.html %}
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <div class="wrapper">
       <div class="sidebar">
-        <header>
+        <header role="banner">
           {% if site.logo %}
-            <img class="img-circle" src="{{site.logo | relative_url}}" alt="Logo">
+            <img class="img-circle" src="{{site.logo | relative_url}}" alt="{{ site.title | default: site.github.repository_name }} - Profile Picture" loading="eager" width="200" height="200">
           {% endif %}
 
           {% if site.blank_title %}
             <h1>{{ site.title | default: site.github.repository_name }}</h1>
           {% else %}
-            <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+            <h1><a href="{{ "/" | absolute_url }}" aria-label="Home">{{ site.title | default: site.github.repository_name }}</a></h1>
           {% endif %}
 
           {% if site.email %}
-            <p class="addr"><i class="fa-regular fa-envelope"></i>&nbsp;{{ site.email }}</p>
+            <p class="addr"><i class="fa-regular fa-envelope" aria-hidden="true"></i>&nbsp;<a href="mailto:{{ site.email }}" aria-label="Email {{ site.email }}">{{ site.email }}</a></p>
           {% endif %}
 
           <p>{{ site.description | default: site.github.project_tagline }}</p>
@@ -52,12 +53,14 @@
           {%- include footer.html -%}
         </div>
       </div>
-      <section>
+      <main id="main-content" role="main">
+        <section>
 
-      {{ content }}
+        {{ content }}
 
-      </section>
-      <footer>
+        </section>
+      </main>
+      <footer role="contentinfo">
         {%- include footer.html -%}
       </footer>
     </div>

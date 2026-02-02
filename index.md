@@ -1,40 +1,82 @@
 # whoami (Aakash Raman)
 
+**Detection Engineer @ Morgan Stanley** | **Threat Hunter & DFIR Practitioner** | **Aspiring Purple Teamer**
+
 **Cell:** +1 (240) 921-7770 | **Email:** [aakashr93@gmail.com](mailto:aakashr93@gmail.com) | [LinkedIn](https://www.linkedin.com/in/aakash-raman-66676b38/) | Baltimore, Maryland | LinkedIn Top Information Security Voice
 
+Cybersecurity professional specializing in threat hunting, detection engineering, and digital forensics. Currently strengthening offensive security skills to enhance defensive capabilities through a purple team approach. Passionate about bridging the gap between red and blue teams to build more resilient security postures.
+
+---
 
 ## WORK EXPERIENCE
-- Detection Engineer, Morgan Stanley
-  
-- Cybersecurity Analyst, Atlas Systems
-  
-- Cybersecurity Consultant Intern (X-Force Incident Response), IBM 
 
-- Cybersecurity Associate & Content Lead, Hevo Data Inc, Bangalore, India
+### Associate Detection Engineer | Morgan Stanley
+**March 2025 - Present** | Baltimore, Maryland (Hybrid)
 
-- Cybersecurity Research Analyst Intern, Hevo Data Inc, Bangalore, India
-  
-- Security Consultant Intern, Ramco Cements Ltd, Chennai, India
+Part of the Threat Hunt and Cyber Detection (THCD) team, contributing to threat hunting, detection engineering, and cybersecurity operations. Leveraging tools like Sigma, Yara, ElasticSearch, Git, and Python to protect Morgan Stanley's assets against evolving cyber threats.
+
+**Key Focus Areas:**
+- Threat hunting and detection engineering
+- Security operations and incident response
+- Purple team exercises and adversarial simulation
+
+### Cybersecurity Analyst | Atlas Systems
+**August 2024 - March 2025** | East Brunswick, New Jersey (Remote)
+
+- Enhanced cloud security by 70% by developing Azure Cloud Security Baselines for migration from Rackspace Cloud to Azure Cloud, adhering to Microsoft CIS v1.3 and MCSB v1 benchmarks
+- Increased incident report generation efficiency by 40% through Python script development, converting CSV vulnerability scan data into customizable PDF templates
+- Supported SOC and Managed Security Services development, improving vulnerability remediation by 30% through vulnerability assessments using Nessus, Burp Suite, and Qualys
+- Performed Azure Cloud security assessments, identifying and mitigating 25% of security gaps through Azure-native vulnerability scans and compliance checks
+- Enhanced incident management workflows using ServiceNow to automate ticket creation and resolution tracking
+
+### Cybersecurity Consultant Intern (X-Force Incident Response) | IBM
+**Previous Role**
+
+### Cybersecurity Associate & Content Lead | Hevo Data Inc, Bangalore, India
+**Previous Role**
+
+### Cybersecurity Research Analyst Intern | Hevo Data Inc, Bangalore, India
+**Previous Role**
+
+### Security Consultant Intern | Ramco Cements Ltd, Chennai, India
+**Previous Role**
 
 
 ## CERTIFICATIONS
 
+### GIAC Certifications (SANS)
+- **GIAC Critical Controls Certification (GCCC)** | 2025-2029
+- **GIAC Certified Incident Handler (GCIH)** | 2025-2029
+- **GIAC Security Essentials (GSEC)** | 2025-2029
+- **GIAC Foundational Cybersecurity Technologies (GFACT)** | 2025-2029
+
+### Cloud Security
+- **AWS Certified Security – Specialty** | Amazon Web Services (2025-2028)
+- **Certificate of Cloud Security Knowledge v.5 (CCSK)** | Cloud Security Alliance (2025)
+- **AWS Certified Solutions Architect Associate (AWS-SAA)** | Amazon Web Services (2023)
+
+### Offensive Security & Penetration Testing
+- **TryHackMe PT1 (Penetration Tester Level 1)** | TryHackMe (2025)
+- **PenTest+** | CompTIA (2023)
+
+### Defensive Security & Analysis
+- **TryHackMe SAL1 (Security Analyst Level 1)** | TryHackMe (2025-2028)
+- **Microsoft Applied Skills: Defend against cyberthreats with Microsoft Defender XDR** | Microsoft (2025)
+- **CySA+** | CompTIA (2023)
+- **Security+** | CompTIA
+
+### Advanced & Specialized
+- **CompTIA Advanced Security Practitioner (CASP)** | CompTIA (2023)
+- **Certified API Security Analyst (CASA)** | APISec University (2024)
+- **OWASP API Security Top 10, API Security Fundamentals** | APISec University (2024)
+- **Certified AppSec Practitioner (CAP)** | The SecOps Group (2024)
+- **Certified Network Security Practitioner (CNSP)** | The SecOps Group (2024)
+- **Certified CyberDefender (CCD)** | Cyber Defenders (2024)
 - **IBM Cybersecurity Analyst**
-- **Security+**
-- **CySA+**
-- **PenTest+**, CompTIA (2023)
-- **CompTIA Advanced Security Practitioner (CASP)**, CompTIA (2023)
-- **AWS Certified Solutions Architect Associate (AWS-SAA)**, Amazon Web Services (2023)
-- **Certified CyberDefender (CCD)**, Cyber Defenders (2024)
-- **OWASP API Security Top 10, API Security Fundamentals**, APISec University (2024)
-- **Certified AppSec Practitioner (CAP), Certified Network Security Practitioner (CNSP)**, The SecOps Group (2024)
-- **Certified API Security Analyst (CASA)**, APISec University (2024)
-- **GIAC Foundational Cybersecurity Technologies (GFACT)**, SANS (2025)
-- **GIAC Security Essentials (GSEC)**, SANS (2025)
-- **GIAC Certified Incident Handler (GCIH)**, SANS (2025)
-- **GIAC Critical Controls Certification (GCCC)**, SANS (2025)
-- **TryHackMe SAL1**, TryHackMe (2025)
-- **TryHackMe PT1**, TryHackMe (2025)
+
+### In Progress
+- **GCFA (GIAC Certified Forensic Analyst)** | SANS
+- **CISSP (Certified Information Systems Security Professional)** | (ISC)²
 
 ---
 
@@ -56,23 +98,43 @@
 
 ---
 
-## CTF
+## SPEAKING & CONFERENCES
 
-- SANS x WiCyS CTF’24 - Rank 1
-- Amazon x WiCyS CTF'24 - Rank 8
-- Huntress CTF 2024 - Rank 80
-- LevelEffect CTF 2024 - Rank 9
-- TryHackMe - Top 1% with 100+ rooms complete.
-- HackTheBox - Defensive Sherlocks
-- CyberDefenders – Blue Team CTFs.
-- Volunteered for BSidesCharm Baltimore 2024 Cybersecurity Conference.
+### BSidesCharm 2025
+**"Think You're Stealthy? How to Detect Attacks in AD"** | [Watch on YouTube](https://lnkd.in/gT2PQmpT)
+
+Presented alongside Rachit Arora and Sai Sathvik Ruppa. The session provided a high-level look at how common Active Directory attack tools leave behind artifacts and how defenders can detect them using unique forensic artifacts, improving existing detections and proactive log monitoring.
+
+### Volunteering
+- **BSidesCharm Baltimore 2024** | Cybersecurity Conference Volunteer
 
 ---
 
-## BLOGS
+## CTF & COMPETITIONS
 
-- **My Cybersecurity Blogs:** [https://medium.com/@araman99](https://medium.com/@araman99)
-- Currently Pursuing GCFA & CISSP on the side
+### Recent Achievements
+- **OffSec's Proving Grounds: The Gauntlet - Echo Response** | Rank 34/4,267 (2024)
+  - Story-driven attack scenarios covering Digital Forensics, Threat Hunting, and Malware Analysis
+  - Demonstrated purple teaming mindset combining attacker and defender perspectives
+
+### Competition Rankings
+- **SANS x WiCyS CTF'24** | Rank 1 🏆
+- **Amazon x WiCyS CTF'24** | Rank 8
+- **LevelEffect CTF 2024** | Rank 9
+- **Huntress CTF 2024** | Rank 80
+
+### Platform Achievements
+- **TryHackMe** | Top 1% with 100+ rooms complete
+- **HackTheBox** | Defensive Sherlocks
+- **CyberDefenders** | Blue Team CTFs
+
+---
+
+## BLOGS & WRITING
+
+- **My Cybersecurity Blogs:** [Medium @araman99](https://medium.com/@araman99)
+
+Sharing insights on threat hunting, detection engineering, digital forensics, and purple teaming methodologies.
 
 ---
 
