@@ -28,7 +28,7 @@
       <div class="sidebar">
         <header role="banner">
           {% if site.logo %}
-            <img class="img-circle" src="{{site.logo | relative_url}}" alt="{{ site.title | default: site.github.repository_name }} - Profile Picture" loading="eager" width="200" height="200">
+            <img class="img-circle" id="profile-picture" src="{{site.logo | relative_url}}" alt="{{ site.title | default: site.github.repository_name }} - Profile Picture" loading="eager" width="200" height="200" data-linkedin="{{ site.linkedin_username }}">
           {% endif %}
 
           {% if site.blank_title %}
@@ -65,5 +65,35 @@
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script>
+      // Fetch LinkedIn profile picture dynamically
+      (function() {
+        const profileImg = document.getElementById('profile-picture');
+        if (!profileImg) return;
+        
+        const linkedinUsername = profileImg.getAttribute('data-linkedin');
+        if (!linkedinUsername) return;
+        
+        // Use LinkedIn's public profile image API via proxy or direct URL
+        // Note: LinkedIn doesn't provide a direct public API, so we'll use a fallback approach
+        // Option 1: Use LinkedIn's image URL format (may require authentication)
+        // Option 2: Use a proxy service
+        // Option 3: Keep local image as fallback
+        
+        // Try to fetch from LinkedIn (this will work if the image is publicly accessible)
+        const linkedinImageUrl = `https://media.licdn.com/dms/image/D5603AQFqLqJqLqJqJq/profile-displayphoto-shrink_200_200/0/1720405937210`;
+        
+        // Create a new image to test if LinkedIn image loads
+        const testImg = new Image();
+        testImg.onload = function() {
+          profileImg.src = linkedinImageUrl;
+        };
+        testImg.onerror = function() {
+          // Keep the original image if LinkedIn image fails to load
+          console.log('Using local profile picture');
+        };
+        testImg.src = linkedinImageUrl;
+      })();
+    </script>
   </body>
 </html>

@@ -80,24 +80,6 @@ Part of the Threat Hunt and Cyber Detection (THCD) team, contributing to threat 
 
 ---
 
-## PROJECTS
-
-- Visualizing Lateral Movement with Velociraptor JSON Logs
-
-
-- Android Malware Analysis Research Paper
-
-
-- Performing Forensic Analysis on a Suspected Malware Disk Image
-
-
-- Performing Penetration Testing and Incident Response for Horizon Inc
-
-
-- Designing a Secure Cloud Security Architecture for Cobra Kai
-
----
-
 ## SPEAKING & CONFERENCES
 
 ### BSidesCharm 2025
