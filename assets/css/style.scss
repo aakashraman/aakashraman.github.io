@@ -21,15 +21,27 @@
 }
 
 /* White Background with Subtle Lines Pattern - Blue Team Theme */
-body {
+/* Force white background - override any dark mode */
+body, html {
     background-color: #ffffff !important;
+    background: #ffffff !important;
     background-image: 
         linear-gradient(90deg, rgba(0, 212, 255, 0.03) 1px, transparent 1px),
-        linear-gradient(rgba(0, 212, 255, 0.03) 1px, transparent 1px);
-    background-size: 20px 20px;
+        linear-gradient(rgba(0, 212, 255, 0.03) 1px, transparent 1px) !important;
+    background-size: 20px 20px !important;
     background-attachment: fixed !important;
     min-height: 100vh;
     position: relative;
+    color: #333 !important;
+}
+
+/* Override dark mode if system prefers it */
+@media (prefers-color-scheme: dark) {
+    body, html, .wrapper, .sidebar, section, header, footer {
+        background-color: #ffffff !important;
+        background: #ffffff !important;
+        color: #333 !important;
+    }
 }
 
 /* Add subtle cyber accent overlay */
