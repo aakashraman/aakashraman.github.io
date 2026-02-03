@@ -30,39 +30,42 @@ Part of the Threat Hunt and Cyber Detection (THCD) team, contributing to threat 
 - Enhanced incident management workflows using ServiceNow to automate ticket creation and resolution tracking
 
 ### Cybersecurity Consultant Intern (X-Force Incident Response) | IBM
-**Previous Role** | Internship
+**May 2023 - August 2023** | Austin, Texas (4 months)
 
-- Assisted IBM's X-Force Incident Response team in cybersecurity consulting engagements and incident response activities
-- Participated in security assessments and threat analysis for enterprise clients
-- Contributed to incident response documentation and forensic analysis workflows
-- Gained hands-on experience with enterprise security tools and incident response methodologies
+- Enhanced incident response by 95% through Purple Teaming bootcamps, collaborating with Digital Forensic Analysts and Incident Responders, leveraging MITRE ATT&CK and Atomic Red Team
+- Improved threat detection and response efficiency by 40% through optimized detection engineering strategies and refined SIEM queries using Splunk and IBM QRadar
+- Boosted incident response capabilities by 20% through visualizing lateral movement with Velociraptor JSON logs, Python and the Splunk SIEM
+- Reduced phishing-related security incidents by 30% via advanced threat hunting utilizing OpenCTI, Cisco Talos Intelligence, and YARA rules
+- Streamlined incident handling efficiency by developing and implementing playbooks and runbooks for insider threats using TheHive, Cortex, CrowdStrike Falcon and SOAR platforms
+- Achieved a 40% improvement in threat detection by refining Splunk and IBM QRadar configurations and integrating comprehensive threat intelligence feeds and STIX/TAXII protocols
 
-### Cybersecurity Associate & Content Lead | Hevo Data Inc, Bangalore, India
-**Previous Role**
+### Cybersecurity Associate | Hevo Data Inc
+**January 2021 - May 2022** | Bengaluru, Karnataka, India (1 year 5 months)
 
-- Led cybersecurity content creation and educational initiatives to raise security awareness
-- Developed security documentation, best practices, and training materials
-- Contributed to security policy development and implementation
-- Collaborated with cross-functional teams to integrate security best practices into organizational processes
-- Managed security content strategy and distribution across multiple channels
+- Worked with the Data Analysis/InfoSec team to monitor security events and authored technical blogs on security and analytics, increasing online presence by 30% using WordPress
+- Improved visibility and strategic decisions with the ELK SIEM, reducing false positives by 30% through optimized queries and custom alerts
+- Reduced risks by 15% by refining methodologies with NIST Cybersecurity Framework, ISO 27001, and MITRE ATT&CK Framework for threat modelling and compliance auditing
+- Enhanced E-Mail security by integrating DMARC and DKIM protocols on the organization's domain, reducing phishing and spam by 60%
+- Enhanced endpoint security by administering Linux/Windows systems and implementing best practices using Docker, Git, and Ansible
+- Conducted vulnerability assessments on networks, endpoints, and AWS instances using Nessus; proposed solutions and leveraged analytics to enhance security protocols
 
-### Cybersecurity Research Analyst Intern | Hevo Data Inc, Bangalore, India
-**Previous Role** | Internship
+### Security Consultant Intern | Ramco Cements Ltd
+**April 2020 - May 2020** | Chennai, Tamil Nadu, India (2 months)
 
-- Conducted in-depth cybersecurity research and threat analysis
-- Analyzed security trends, vulnerabilities, and emerging threats
-- Assisted in security assessments and vulnerability research
-- Contributed to security research reports and documentation
-- Supported the security team in threat intelligence gathering and analysis
+- Reduced the company's downtime by 25% by enhancing Risk Management and Business Continuity Plans
+- Hardened Active Directory by implementing Microsoft best practices and Role-Based Access Control
+- Boosted insider threat detection and response by 75% through digital disk forensics using KAPE, Veracrypt, Autopsy, and FTK Imager
+- Enhanced network security by securing network traffic with SonicWall Next-Gen Firewall
 
-### Security Consultant Intern | Ramco Cements Ltd, Chennai, India
-**Previous Role** | Internship
+### iSchool Grader | University of Maryland
+**August 2023 - May 2024** | College Park, Maryland (10 months)
 
-- Provided security consulting services and risk assessments for enterprise infrastructure
-- Conducted security audits and compliance reviews
-- Assisted in developing security policies and procedures
-- Performed vulnerability assessments and security testing
-- Contributed to security awareness training and documentation
+Grader for Information User Needs & Assessment (INST352) and Cross Communication Disciplinary Lab (INST406)
+
+### International Orientation Leader | University of Maryland
+**January 2023 - May 2024** | College Park, Maryland (1 year 5 months)
+
+Assisted international students with orientation and integration into the university community.
 
 
 ## CERTIFICATIONS
