@@ -58,20 +58,32 @@ body::after {
     background: transparent !important;
 }
 
-/* Sidebar text - dark for white background */
+/* Sidebar text - white/visible for white background */
 .sidebar {
-    color: #333 !important;
+    color: #000 !important;
 }
 
 .sidebar h1, .sidebar h1 a {
     color: var(--cyber-blue) !important;
+    font-weight: 700;
 }
 
 .sidebar p, .sidebar .addr {
-    color: #555 !important;
+    color: #333 !important;
 }
 
 .sidebar .addr a {
+    color: var(--cyber-blue) !important;
+}
+
+/* Sidebar links - make them visible */
+.link-wrapper ul.link a {
+    color: #000 !important;
+    font-weight: 500;
+}
+
+.link-wrapper ul.link a:hover,
+.link-wrapper ul.link a:focus {
     color: var(--cyber-blue) !important;
 }
 
@@ -146,14 +158,27 @@ section p, section li, section td, section th {
 section h1 {
     color: #000 !important;
     font-weight: 700;
+    font-size: 2em;
+    margin-bottom: 0.5em;
 }
 
 section h2 {
     color: #000 !important;
     font-weight: 600;
+    font-size: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 1em;
 }
 
-section h3, section h4, section h5, section h6 {
+section h3 {
+    color: var(--cyber-blue) !important;
+    font-weight: 600;
+    font-size: 1.25em;
+    margin-top: 1.5em;
+    margin-bottom: 0.75em;
+}
+
+section h4, section h5, section h6 {
     color: var(--cyber-blue) !important;
     font-weight: 600;
 }
