@@ -30,16 +30,24 @@ Part of the Threat Hunt and Cyber Detection (THCD) team, contributing to threat 
 - Enhanced incident management workflows using ServiceNow to automate ticket creation and resolution tracking
 
 ### Cybersecurity Consultant Intern (X-Force Incident Response) | IBM
-**Previous Role**
+**Previous Role** | Internship
+
+Worked with IBM's X-Force Incident Response team on cybersecurity consulting projects and incident response activities.
 
 ### Cybersecurity Associate & Content Lead | Hevo Data Inc, Bangalore, India
 **Previous Role**
 
+Led cybersecurity content creation and contributed to security initiatives at Hevo Data.
+
 ### Cybersecurity Research Analyst Intern | Hevo Data Inc, Bangalore, India
-**Previous Role**
+**Previous Role** | Internship
+
+Conducted cybersecurity research and analysis as part of the security team.
 
 ### Security Consultant Intern | Ramco Cements Ltd, Chennai, India
-**Previous Role**
+**Previous Role** | Internship
+
+Provided security consulting services and assessments for Ramco Cements.
 
 
 ## CERTIFICATIONS
@@ -95,7 +103,7 @@ Presented alongside Rachit Arora and Sai Sathvik Ruppa. The session provided a h
 ## CTF & COMPETITIONS
 
 ### Recent Achievements
-- **OffSec's Proving Grounds: The Gauntlet - Echo Response** | Rank 34/4,267 (2024)
+- **OffSec's Proving Grounds: The Gauntlet - Echo Response** | Rank 34/4,267 (2025)
   - Story-driven attack scenarios covering Digital Forensics, Threat Hunting, and Malware Analysis
   - Demonstrated purple teaming mindset combining attacker and defender perspectives
 

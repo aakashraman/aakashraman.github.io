@@ -28,7 +28,12 @@
       <div class="sidebar">
         <header role="banner">
           {% if site.logo %}
-            <img class="img-circle" id="profile-picture" src="{{site.logo | relative_url}}" alt="{{ site.title | default: site.github.repository_name }} - Profile Picture" loading="eager" width="200" height="200" data-linkedin="{{ site.linkedin_username }}">
+            {% assign logo_url = site.logo %}
+            {% if logo_url contains 'http' %}
+              <img class="img-circle" id="profile-picture" src="{{logo_url}}" alt="{{ site.title | default: site.github.repository_name }} - Profile Picture" loading="eager" width="200" height="200" data-linkedin="{{ site.linkedin_username }}" onerror="this.src='/assets/img/1720405937210.jpeg'">
+            {% else %}
+              <img class="img-circle" id="profile-picture" src="{{site.logo | relative_url}}" alt="{{ site.title | default: site.github.repository_name }} - Profile Picture" loading="eager" width="200" height="200" data-linkedin="{{ site.linkedin_username }}">
+            {% endif %}
           {% endif %}
 
           {% if site.blank_title %}
