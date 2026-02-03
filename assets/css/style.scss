@@ -289,6 +289,8 @@ section a:focus-visible {
     text-decoration: none;
     border-left: 3px solid transparent;
     position: relative;
+    color: #000 !important;
+    font-weight: 500;
 }
 
 .link-wrapper ul.link a::before {
@@ -308,6 +310,7 @@ section a:focus-visible {
     transform: translateX(4px);
     outline: none;
     box-shadow: 0 0 10px rgba(0, 212, 255, 0.2);
+    color: var(--cyber-blue) !important;
 }
 
 .link-wrapper ul.link a:hover::before,
