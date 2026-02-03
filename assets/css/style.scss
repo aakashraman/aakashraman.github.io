@@ -115,6 +115,16 @@ body::before {
 section {
     line-height: 1.7;
     max-width: 100%;
+    color: var(--cyber-text) !important;
+}
+
+/* Ensure text is visible on dark background */
+section p, section li, section td, section th {
+    color: var(--cyber-text) !important;
+}
+
+section h1, section h2, section h3, section h4, section h5, section h6 {
+    color: var(--cyber-blue) !important;
 }
 
 section h1, section h2, section h3 {

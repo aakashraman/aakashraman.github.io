@@ -1,7 +1,7 @@
 title: Aakash Raman
 # LinkedIn profile picture - Update this URL when your LinkedIn profile picture changes
 # To get the current URL: Right-click your LinkedIn profile picture > Copy image address
-logo: https://media.licdn.com/dms/image/D5603AQFqLqJqLqJqJq/profile-displayphoto-shrink_200_200/0/1720405937210?e=1730332800&v=beta&t=YOUR_TOKEN_HERE
+logo: /assets/img/1720405937210.jpeg
 # Fallback to local image if LinkedIn URL fails
 linkedin_profile: https://www.linkedin.com/in/aakash-raman-66676b38/
 linkedin_username: aakash-raman-66676b38
