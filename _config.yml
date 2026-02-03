@@ -9,7 +9,7 @@ email: aakashr93@gmail.com
 description: Detection Engineer | Threat Hunter & DFIR Practitioner | Aspiring Purple Teamer
 show_downloads: false
 google_analytics: G-ZLK2GHB055
-color-scheme: auto
+color-scheme: light
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
