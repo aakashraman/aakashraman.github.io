@@ -55,6 +55,23 @@ body::after {
     background: transparent !important;
 }
 
+/* Sidebar text visibility on dark background */
+.sidebar {
+    color: var(--cyber-text) !important;
+}
+
+.sidebar h1, .sidebar h1 a {
+    color: var(--cyber-blue) !important;
+}
+
+.sidebar p, .sidebar .addr {
+    color: var(--cyber-text) !important;
+}
+
+.sidebar .addr a {
+    color: var(--cyber-green) !important;
+}
+
 /* Terminal-style prompt indicators */
 body::before {
     content: "> ";
