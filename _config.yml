@@ -13,6 +13,9 @@ plugins:
   - jekyll-seo-tag
   - jemoji
 
+# Since we have the theme files locally, we use the theme directly
+# No remote_theme needed as all files are in the repository
+
 # You can find fonts from https://iconify.design or https://fontawesome.com. Below is just an example illustrating how to use custom icons
 sidebar:
   - name: Home
