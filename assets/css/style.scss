@@ -53,9 +53,32 @@ body::after {
     background: transparent !important;
 }
 
-/* Ensure sidebar and section have transparent backgrounds */
-.sidebar, section {
-    background: transparent !important;
+/* Ensure ALL sections have white backgrounds - Remove any black/dark backgrounds */
+.sidebar, section, header, .sidebar-footer, footer, 
+.wrapper, .link-wrapper, .popup, 
+section ul, section ol, section li,
+section p, section div, section blockquote {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+}
+
+/* Ensure all text is dark for visibility on white */
+.sidebar, section, header, footer {
+    color: #333 !important;
+}
+
+/* Override any dark text colors */
+.sidebar *, section * {
+    color: inherit;
+}
+
+/* Ensure links are visible */
+a {
+    color: var(--cyber-blue) !important;
+}
+
+a:visited {
+    color: var(--cyber-blue) !important;
 }
 
 /* Sidebar text - white/visible for white background */
@@ -151,8 +174,10 @@ section {
 }
 
 /* Ensure text is visible on white background */
-section p, section li, section td, section th {
+section p, section li, section td, section th, 
+section ul, section ol, section div, section blockquote {
     color: #333 !important;
+    background: #ffffff !important;
 }
 
 section h1 {
@@ -160,6 +185,7 @@ section h1 {
     font-weight: 700;
     font-size: 2em;
     margin-bottom: 0.5em;
+    background: #ffffff !important;
 }
 
 section h2 {
@@ -168,6 +194,7 @@ section h2 {
     font-size: 1.5em;
     margin-top: 2em;
     margin-bottom: 1em;
+    background: #ffffff !important;
 }
 
 section h3 {
@@ -176,11 +203,13 @@ section h3 {
     font-size: 1.25em;
     margin-top: 1.5em;
     margin-bottom: 0.75em;
+    background: #ffffff !important;
 }
 
 section h4, section h5, section h6 {
     color: var(--cyber-blue) !important;
     font-weight: 600;
+    background: #ffffff !important;
 }
 
 section h1, section h2, section h3 {
@@ -323,13 +352,13 @@ section a:focus-visible {
     outline-offset: 2px;
 }
 
-/* Improved Code Blocks - Terminal Style */
+/* Improved Code Blocks - White Background Style */
 code {
     background-color: rgba(0, 212, 255, 0.1);
     padding: 0.2em 0.4em;
     border-radius: 3px;
     font-size: 0.9em;
-    color: var(--cyber-green);
+    color: #0066cc;
     font-family: 'Courier New', monospace;
     border: 1px solid rgba(0, 212, 255, 0.3);
 }
@@ -338,19 +367,19 @@ pre {
     overflow-x: auto;
     padding: 1em;
     border-radius: 6px;
-    border: 1px solid var(--cyber-blue);
-    background-color: rgba(10, 14, 39, 0.8);
-    box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     position: relative;
 }
 
 pre::before {
-    content: "TERMINAL";
+    content: "CODE";
     position: absolute;
     top: 0.5em;
     right: 1em;
     font-size: 0.7em;
-    color: var(--cyber-green);
+    color: #666;
     font-family: 'Courier New', monospace;
     opacity: 0.6;
 }
@@ -358,7 +387,7 @@ pre::before {
 pre code {
     background-color: transparent;
     padding: 0;
-    color: var(--cyber-text);
+    color: #333;
 }
 
 /* Enhanced HR Styling - Cyber Theme */
