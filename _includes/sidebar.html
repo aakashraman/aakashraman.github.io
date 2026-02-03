@@ -45,7 +45,7 @@
         {%- for platform in site.sidebar %}
         <li>
           <a href="{{ platform.link }}" 
-             {% if platform.link starts_with 'http' %}target="_blank" rel="noopener noreferrer"{% endif %}
+             {% assign link_start = platform.link | slice: 0, 4 %}{% if link_start == 'http' %}target="_blank" rel="noopener noreferrer"{% endif %}
              aria-label="{{ platform.name }} - Opens in new tab">
             {{ platform.icon }}&nbsp;<span>{{ platform.name }}</span>
           </a>
