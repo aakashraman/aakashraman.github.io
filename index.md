@@ -32,22 +32,37 @@ Part of the Threat Hunt and Cyber Detection (THCD) team, contributing to threat 
 ### Cybersecurity Consultant Intern (X-Force Incident Response) | IBM
 **Previous Role** | Internship
 
-Worked with IBM's X-Force Incident Response team on cybersecurity consulting projects and incident response activities.
+- Assisted IBM's X-Force Incident Response team in cybersecurity consulting engagements and incident response activities
+- Participated in security assessments and threat analysis for enterprise clients
+- Contributed to incident response documentation and forensic analysis workflows
+- Gained hands-on experience with enterprise security tools and incident response methodologies
 
 ### Cybersecurity Associate & Content Lead | Hevo Data Inc, Bangalore, India
 **Previous Role**
 
-Led cybersecurity content creation and contributed to security initiatives at Hevo Data.
+- Led cybersecurity content creation and educational initiatives to raise security awareness
+- Developed security documentation, best practices, and training materials
+- Contributed to security policy development and implementation
+- Collaborated with cross-functional teams to integrate security best practices into organizational processes
+- Managed security content strategy and distribution across multiple channels
 
 ### Cybersecurity Research Analyst Intern | Hevo Data Inc, Bangalore, India
 **Previous Role** | Internship
 
-Conducted cybersecurity research and analysis as part of the security team.
+- Conducted in-depth cybersecurity research and threat analysis
+- Analyzed security trends, vulnerabilities, and emerging threats
+- Assisted in security assessments and vulnerability research
+- Contributed to security research reports and documentation
+- Supported the security team in threat intelligence gathering and analysis
 
 ### Security Consultant Intern | Ramco Cements Ltd, Chennai, India
 **Previous Role** | Internship
 
-Provided security consulting services and assessments for Ramco Cements.
+- Provided security consulting services and risk assessments for enterprise infrastructure
+- Conducted security audits and compliance reviews
+- Assisted in developing security policies and procedures
+- Performed vulnerability assessments and security testing
+- Contributed to security awareness training and documentation
 
 
 ## CERTIFICATIONS

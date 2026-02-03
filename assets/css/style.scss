@@ -20,15 +20,19 @@
     --cyber-border: #1a2332;
 }
 
-/* Blue Team Dark Background - Override theme background */
+/* White Background with Subtle Lines Pattern - Blue Team Theme */
 body {
-    background: linear-gradient(135deg, #0a0e27 0%, #1a2332 50%, #0f1419 100%) !important;
+    background-color: #ffffff !important;
+    background-image: 
+        linear-gradient(90deg, rgba(0, 212, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(rgba(0, 212, 255, 0.03) 1px, transparent 1px);
+    background-size: 20px 20px;
     background-attachment: fixed !important;
     min-height: 100vh;
     position: relative;
 }
 
-/* Add subtle network pattern overlay */
+/* Add subtle cyber accent overlay */
 body::after {
     content: "";
     position: fixed;
@@ -36,10 +40,9 @@ body::after {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: 
-        radial-gradient(circle at 20% 50%, rgba(0, 212, 255, 0.03) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(0, 255, 65, 0.03) 0%, transparent 50%),
-        linear-gradient(90deg, transparent 0%, rgba(0, 212, 255, 0.02) 50%, transparent 100%);
+    background: 
+        radial-gradient(circle at 10% 20%, rgba(0, 212, 255, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 90% 80%, rgba(0, 255, 65, 0.05) 0%, transparent 50%);
     pointer-events: none;
     z-index: 0;
 }
@@ -55,9 +58,9 @@ body::after {
     background: transparent !important;
 }
 
-/* Sidebar text visibility on dark background */
+/* Sidebar text - dark for white background */
 .sidebar {
-    color: var(--cyber-text) !important;
+    color: #333 !important;
 }
 
 .sidebar h1, .sidebar h1 a {
@@ -65,11 +68,11 @@ body::after {
 }
 
 .sidebar p, .sidebar .addr {
-    color: var(--cyber-text) !important;
+    color: #555 !important;
 }
 
 .sidebar .addr a {
-    color: var(--cyber-green) !important;
+    color: var(--cyber-blue) !important;
 }
 
 /* Terminal-style prompt indicators */
@@ -132,16 +135,27 @@ body::before {
 section {
     line-height: 1.7;
     max-width: 100%;
-    color: var(--cyber-text) !important;
+    color: #333 !important;
 }
 
-/* Ensure text is visible on dark background */
+/* Ensure text is visible on white background */
 section p, section li, section td, section th {
-    color: var(--cyber-text) !important;
+    color: #333 !important;
 }
 
-section h1, section h2, section h3, section h4, section h5, section h6 {
+section h1 {
+    color: #000 !important;
+    font-weight: 700;
+}
+
+section h2 {
+    color: #000 !important;
+    font-weight: 600;
+}
+
+section h3, section h4, section h5, section h6 {
     color: var(--cyber-blue) !important;
+    font-weight: 600;
 }
 
 section h1, section h2, section h3 {
