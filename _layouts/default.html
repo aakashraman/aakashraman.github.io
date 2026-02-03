@@ -85,17 +85,19 @@
         // Option 2: Use a proxy service
         // Option 3: Keep local image as fallback
         
-        // Try to fetch from LinkedIn (this will work if the image is publicly accessible)
-        const linkedinImageUrl = `https://media.licdn.com/dms/image/D5603AQFqLqJqLqJqJq/profile-displayphoto-shrink_200_200/0/1720405937210`;
+        // Try to fetch from LinkedIn using the latest profile picture URL
+        // LinkedIn profile picture URLs are dynamic - update this when your profile picture changes
+        const linkedinImageUrl = `https://media.licdn.com/dms/image/v2/D4E03AQFMn02lA1B5fQ/profile-displayphoto-shrink_200_200/0/1764607086039`;
         
         // Create a new image to test if LinkedIn image loads
         const testImg = new Image();
         testImg.onload = function() {
           profileImg.src = linkedinImageUrl;
+          profileImg.setAttribute('data-updated', 'true');
         };
         testImg.onerror = function() {
           // Keep the original image if LinkedIn image fails to load
-          console.log('Using local profile picture');
+          console.log('Using configured profile picture');
         };
         testImg.src = linkedinImageUrl;
       })();

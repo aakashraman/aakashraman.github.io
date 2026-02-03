@@ -57,11 +57,6 @@ Part of the Threat Hunt and Cyber Detection (THCD) team, contributing to threat 
 - Boosted insider threat detection and response by 75% through digital disk forensics using KAPE, Veracrypt, Autopsy, and FTK Imager
 - Enhanced network security by securing network traffic with SonicWall Next-Gen Firewall
 
-### iSchool Grader | University of Maryland
-**August 2023 - May 2024** | College Park, Maryland (10 months)
-
-Grader for Information User Needs & Assessment (INST352) and Cross Communication Disciplinary Lab (INST406)
-
 ### International Orientation Leader | University of Maryland
 **January 2023 - May 2024** | College Park, Maryland (1 year 5 months)
 
