@@ -5,6 +5,7 @@ groups:
     items:
       - { abbr: GCFA, icon: gcfa.png, name: GIAC Certified Forensic Analyst, year: 2026 }
       - { abbr: GNFA, icon: gnfa.png, name: GIAC Network Forensic Analyst, year: 2026 }
+      - { abbr: GCFE, icon: gcfe.png, name: GIAC Certified Forensic Examiner, year: 2026 }
       - { abbr: GCIH, icon: gcih.png, name: GIAC Certified Incident Handler, year: 2025 }
       - { abbr: GCCC, icon: gccc.png, name: GIAC Critical Controls Certification, year: 2025 }
       - { abbr: GSEC, icon: gsec.png, name: GIAC Security Essentials, year: 2025 }
