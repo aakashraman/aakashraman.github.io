@@ -1,4 +1,26 @@
 # Recent highlights (newest first). Shown on the home page; remove all entries to hide the section.
+- title: "Completed Hack The Box Pro Lab: Zephyr"
+  tag: Red Team · Active Directory
+  summary: >-
+    My first HTB Pro Lab: a full red-team style engagement focused on Active Directory enumeration
+    and exploitation. Coming from a defensive background, it gave me a much deeper appreciation of
+    how red team operations are planned and executed in realistic enterprise environments.
+  points:
+    - Enumeration, relay attacks, pivoting, SQL and web application attacks
+    - Password cracking, privilege escalation, and AD flaw exploitation
+    - Lateral movement across trust boundaries
+    - Made possible by Morgan Stanley and Hack The Box
+
+- title: "CyberDefenders: World Rank #32"
+  tag: DFIR · Threat Hunting
+  summary: >-
+    Sharpening DFIR and threat hunting skills across network, endpoint, and cloud, from kiosk device
+    forensics to a full APT intrusion and ransomware scenario.
+  points:
+    - Cloud forensics with Microsoft Sentinel
+    - Writing Sigma rules and validating them against Windows Event Logs with Hayabusa
+    - Basic reversing with IDA Pro
+
 - title: Earned the GIAC Network Forensic Analyst (GNFA) — scored 91%
   tag: GNFA · FOR572
   summary: >-

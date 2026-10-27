@@ -1,10 +1,8 @@
 ---
 layout: default
 ---
-{%- assign cert_count = 0 -%}
 {%- assign giac_count = 0 -%}
 {%- for g in site.data.certifications.groups -%}
-  {%- assign cert_count = cert_count | plus: g.items.size -%}
   {%- if g.group contains "GIAC" -%}{%- assign giac_count = g.items.size -%}{%- endif -%}
 {%- endfor -%}
 
@@ -13,7 +11,7 @@ layout: default
     <div>
       <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Threat Hunt &amp; Cyber Detection @ Morgan Stanley</span>
       <h1>Aakash Raman</h1>
-      <p class="role"><strong>Detection &amp; Response Engineer</strong></p>
+      <p class="role"><strong>Detection Engineer</strong></p>
       <ul class="disciplines" aria-label="Focus areas">
         <li>Threat Hunting</li><li>Incident Response</li><li>Malware Analysis</li><li>Digital Forensics</li>
       </ul>
@@ -31,7 +29,6 @@ layout: default
     </div>
     <div class="portrait">
       <img src="{{ site.logo | relative_url }}" alt="Portrait of Aakash Raman" width="280" height="280">
-      <div class="portrait-badge"><b>GCFA · GNFA</b><span>GIAC forensics certified</span></div>
     </div>
   </div>
 </section>
@@ -39,7 +36,7 @@ layout: default
 <div class="container">
   <div class="stats">
     <div class="stat"><b>{{ giac_count }}×</b><span>GIAC certifications</span></div>
-    <div class="stat"><b>{{ cert_count }}</b><span>Industry certifications</span></div>
+    <div class="stat"><b>#32</b><span>CyberDefenders world rank</span></div>
     <div class="stat"><b>#1</b><span>SANS × WiCyS CTF '24</span></div>
     <div class="stat"><b>Top 1%</b><span>TryHackMe</span></div>
   </div>
@@ -51,17 +48,18 @@ layout: default
       <p class="kicker">About</p>
       <h2>Finding what others miss</h2>
       <div class="prose" style="margin-top:20px">
-        <p>I'm a <strong>Detection &amp; Response Engineer on Morgan Stanley's Threat Hunt and Cyber Detection team</strong>, where I write detections, hunt for threats, and support incident response across the firm.</p>
+        <p>I'm a <strong>Detection Engineer on Morgan Stanley's Threat Hunt and Cyber Detection team</strong>, where I write detections, hunt for threats, and support incident response across the firm.</p>
         <p>My path runs through incident response with <strong>IBM X-Force</strong>, cloud security at Atlas Systems, and security operations at Hevo Data. I hold a <strong>Master of Engineering in Cybersecurity from the University of Maryland</strong> and GIAC's forensic analyst certifications, <strong>GCFA and GNFA</strong>.</p>
         <p>Outside work I speak at conferences, write about forensics and threat hunting, build open-source detection tooling, and compete in blue-team CTFs.</p>
       </div>
     </div>
-    <div class="term" aria-label="Profile summary">
-      <div class="term-bar"><span></span><span></span><span></span><em>analyst@soc: ~</em></div>
-<pre class="term-body"><span class="p">$</span> whoami
+    <div class="term" id="term">
+      <div class="term-bar"><span></span><span></span><span></span><em id="term-title">aakash@soc: ~</em></div>
+      <div class="term-body" id="term-body">
+<pre><span class="p">$</span> whoami
 aakash.raman
 <span class="p">$</span> cat profile.yml
-<span class="k">role:</span>     Detection &amp; Response Engineer
+<span class="k">role:</span>     Detection Engineer
 <span class="k">team:</span>     Threat Hunt &amp; Cyber Detection
 <span class="k">org:</span>      Morgan Stanley
 <span class="k">focus:</span>
@@ -71,10 +69,46 @@ aakash.raman
   - digital-forensics
 <span class="k">giac:</span>     [GCFA, GNFA, GCIH, GCCC, GSEC, GFACT]
 <span class="k">location:</span> Baltimore, MD
-<span class="p">$</span> <span class="cursor" aria-hidden="true"></span></pre>
+<span id="term-idle"><span class="p">$</span> <span class="cursor" aria-hidden="true"></span></span></pre>
+      </div>
     </div>
   </div>
 </section>
+
+<script type="application/json" id="term-data">
+{
+  "site": {
+    "name": {{ site.title | jsonify }},
+    "email": {{ site.email | jsonify }},
+    "location": {{ site.location | jsonify }},
+    "resume": {{ site.resume | relative_url | jsonify }},
+    "links": {
+      "linkedin": {{ site.linkedin_profile | jsonify }},
+      "github": {{ site.github_profile | jsonify }},
+      "medium": {{ site.medium_profile | jsonify }},
+      "credly": {{ site.credly_profile | jsonify }}
+    }
+  },
+  "about": [
+    "I'm a Detection Engineer on Morgan Stanley's Threat Hunt and Cyber Detection team, where I write detections, hunt for threats, and support incident response across the firm.",
+    "My path runs through incident response with IBM X-Force, cloud security at Atlas Systems, and security operations at Hevo Data. I hold a Master of Engineering in Cybersecurity from the University of Maryland and GIAC's forensic analyst certifications, GCFA and GNFA.",
+    "Outside work I speak at conferences, write about forensics and threat hunting, build open-source detection tooling, and compete in blue-team CTFs."
+  ],
+  "education": [
+    "University of Maryland, College Park | Master of Engineering in Cybersecurity",
+    "Vellore Institute of Technology | B.Tech, Computer Science & Engineering (Information Security)"
+  ],
+  "capabilities": {{ site.data.capabilities | jsonify }},
+  "experience": {{ site.data.experience | jsonify }},
+  "certifications": {{ site.data.certifications | jsonify }},
+  "updates": {{ site.data.updates | jsonify }},
+  "projects": {{ site.data.projects | jsonify }},
+  "talks": {{ site.data.talks | jsonify }},
+  "ctf": {{ site.data.ctf | jsonify }},
+  "writing": {{ site.data.writing | jsonify }}
+}
+</script>
+<script src="{{ '/assets/js/terminal.js' | relative_url }}" defer></script>
 
 <section class="section soft" id="capabilities">
   <div class="container">
@@ -156,7 +190,7 @@ aakash.raman
     <div class="section-head">
       <div>
         <p class="kicker">Certifications</p>
-        <h2>{{ cert_count }} certifications across defense, cloud &amp; offense</h2>
+        <h2>Certifications across defense, cloud &amp; offense</h2>
       </div>
       <a class="link-arrow" href="{{ site.credly_profile }}" target="_blank" rel="noopener"><i class="fa-solid fa-certificate" aria-hidden="true"></i> Verify on Credly →</a>
     </div>
@@ -166,8 +200,8 @@ aakash.raman
         <h3>{{ g.group }} <small>{{ g.items.size }}</small></h3>
         {%- for c in g.items %}
         <div class="cert">
-          <span class="cert-badge">{{ c.abbr }}</span>
-          <span class="cert-name">{{ c.name }}</span>
+          {% if c.icon %}<img class="cert-icon" src="{{ '/assets/img/badges/' | append: c.icon | relative_url }}" alt="{{ c.abbr }} badge" width="44" height="44" loading="lazy">{% else %}<span class="cert-icon cert-icon-text" aria-hidden="true">{{ c.abbr }}</span>{% endif %}
+          <span class="cert-name">{{ c.name }}<small>{{ c.abbr }}</small></span>
           {% if c.year %}<span class="cert-year">{{ c.year }}</span>{% endif %}
         </div>
         {%- endfor %}
@@ -211,17 +245,18 @@ aakash.raman
     <div class="section-head">
       <div>
         <p class="kicker">Speaking</p>
-        <h2>Talks &amp; community</h2>
+        <h2>Conferences &amp; Talks</h2>
       </div>
     </div>
     <div class="grid-2">
       {%- for t in site.data.talks %}
-      <a class="card talk" href="{{ t.url }}" target="_blank" rel="noopener">
+      {% if t.url %}<a class="card talk" href="{{ t.url }}" target="_blank" rel="noopener">{% else %}<div class="card talk">{% endif %}
         <span class="card-meta">{{ t.event }}</span>
         <h3 style="margin-top:12px">{{ t.title }}</h3>
         <p>{{ t.summary }}</p>
-        <span class="card-link">{{ t.link_label }} →</span>
-      </a>
+        {% if t.points %}<ul>{% for pt in t.points %}<li>{{ pt }}</li>{% endfor %}</ul>{% endif %}
+        {% if t.url %}<span class="card-link">{{ t.link_label }} →</span>{% endif %}
+      {% if t.url %}</a>{% else %}</div>{% endif %}
       {%- endfor %}
     </div>
     <p class="section-sub" style="margin-top:20px">Also volunteered at BSidesCharm Baltimore 2024.</p>
@@ -256,7 +291,7 @@ aakash.raman
     <div class="section-head">
       <div>
         <p class="kicker">Writing</p>
-        <h2>Articles on Medium</h2>
+        <h2>Medium Articles</h2>
         <p class="section-sub">Practical write-ups on forensics, threat hunting, and detection.</p>
       </div>
       <a class="link-arrow" href="{{ site.medium_profile }}" target="_blank" rel="noopener">All articles →</a>
@@ -264,7 +299,7 @@ aakash.raman
     <div class="posts">
       {%- for w in site.data.writing %}
       <a class="post" href="{{ w.url }}" target="_blank" rel="noopener">
-        <time>{{ w.date }}</time><b>{{ w.title }}</b><span class="tag">{{ w.tag }}</span>
+        <time>{{ w.date | default: "Earlier" }}</time><b>{{ w.title }}</b><span class="tag">{{ w.tag }}</span><span class="post-go" aria-hidden="true">Read →</span>
       </a>
       {%- endfor %}
     </div>

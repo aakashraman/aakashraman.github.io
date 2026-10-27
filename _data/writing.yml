@@ -1,9 +1,21 @@
-# Medium articles, newest first.
+# Medium articles, newest first. `date` is optional (shown as "Earlier" when missing).
 - title: Uncovering Linux Forensics Artifacts for Digital Forensics Investigators
   date: Apr 2025
   url: https://medium.com/@araman99/uncovering-linux-forensics-artifacts-for-digital-forensics-investigators-5bf6ab3f5e19
   tag: DFIR
-- title: Advent of Cyber 2024 series (Days 1–4)
+- title: "Advent of Cyber 2024 Day 4: I'm all atomic inside!"
+  date: Dec 2024
+  url: https://medium.com/@araman99/advent-of-cyber-2024-day-4-im-all-atomic-inside-43b20c7e7c74
+  tag: Walkthrough
+- title: "Advent of Cyber 2024 Day 3: Even if I wanted to go, their vulnerabilities wouldn't allow it"
+  date: Dec 2024
+  url: https://medium.com/@araman99/advent-of-cyber-2024-day-3-even-if-i-wanted-to-go-their-vulnerabilities-wouldnt-allow-it-a7b8e93317d1
+  tag: Walkthrough
+- title: "Advent of Cyber 2024 Day 2: One man's false positive is another man's potpourri"
+  date: Dec 2024
+  url: https://medium.com/@araman99/advent-of-cyber-2024-day-2-one-mans-false-positive-is-another-man-s-potpourri-76d72d2c0fbd
+  tag: Walkthrough
+- title: "Advent of Cyber 2024 Day 1: Maybe SOC-mas music, he thought, doesn't come from a store?"
   date: Dec 2024
   url: https://medium.com/@araman99/advent-of-cyber-2024-day-1-maybe-soc-mas-music-he-thought-doesnt-come-from-a-store-37135233ed5b
   tag: Walkthrough
@@ -15,11 +27,11 @@
   date: Aug 2024
   url: https://medium.com/@araman99/tryhackme-apiwizards-breach-walkthrough-1984ca780121
   tag: Walkthrough
-- title: Understanding the CrowdStrike Windows Outage — A Technical Guide
+- title: "Understanding the CrowdStrike Windows Outage: A Technical Guide"
   date: Jul 2024
   url: https://medium.com/@araman99/understanding-the-crowdstrike-windows-outage-a-technical-guide-c3d48c3b241d
   tag: Analysis
-- title: Mastering Network Threat Hunting — A Foundational Guide
+- title: "Mastering Network Threat Hunting: A Foundational Guide"
   date: Jul 2024
   url: https://medium.com/@araman99/mastering-network-threat-hunting-a-foundational-guide-f7b5b5338175
   tag: Threat Hunting
@@ -27,3 +39,12 @@
   date: Jun 2024
   url: https://medium.com/@araman99/uncovering-windows-forensics-artefacts-for-digital-forensics-investigators-e0b75f01d086
   tag: DFIR
+- title: "W1seGuy: Cryptography Capture the Flag Walkthrough (TryHackMe)"
+  url: https://medium.com/@araman99/w1seguy-cryptography-capture-the-flag-walkthrough-tryhackme-b705d0b8ec83
+  tag: Walkthrough
+- title: All About Kerberos & NTLM Authentication on Windows Systems
+  url: https://medium.com/@araman99/all-about-kerberos-ntlm-authentication-on-windows-systems-42e793afb020
+  tag: Windows
+- title: Launch Your Cybersecurity Career with the All-New Security Engineering Pathway by TryHackMe
+  url: https://medium.com/@araman99/launch-your-cybersecurity-career-with-the-all-new-security-engineering-pathway-by-tryhackme-cf3120653e5b
+  tag: Career

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: "en-US" }}" data-theme="dark">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#0b0f17">
+    <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 {% seo %}
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource-variable/inter@5.0.16/index.css">
@@ -28,6 +29,7 @@
           {%- endfor %}
           <a class="btn btn-sm btn-primary" href="{{ site.resume | relative_url }}" target="_blank" rel="noopener">Résumé</a>
         </nav>
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to light theme"><i class="fa-solid fa-sun" aria-hidden="true"></i><i class="fa-solid fa-moon" aria-hidden="true"></i></button>
       </div>
     </header>
 
@@ -41,5 +43,6 @@
         <div class="socials">{% include socials.html %}</div>
       </div>
     </footer>
+    <script src="{{ "/assets/js/site.js" | relative_url }}" defer></script>
   </body>
 </html>

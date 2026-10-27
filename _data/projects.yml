@@ -1,4 +1,28 @@
 # `featured: true` projects also appear on the home page.
+- title: SOF-ELK — PECmd Prefetch Parser
+  featured: true
+  repo: https://github.com/philhagen/sof-elk/pull/404
+  summary: >-
+    Merged contribution to SOF-ELK, the SANS forensics log-analysis platform: added a parser for
+    Eric Zimmerman's PECmd (Prefetch) output under KAPE support, closing issue #163.
+  points:
+    - Ingests PECmd Prefetch CSV output into SOF-ELK for execution-artifact analysis
+    - Fits into the existing KAPE triage workflow
+  tags: [SOF-ELK, Logstash, KAPE, DFIR]
+
+- title: "Spytrail — DEF CON 33 Cloud Village CTF"
+  featured: true
+  repo: https://github.com/cloud-village/defcon-33-ctf/tree/main/spytrail
+  summary: >-
+    Designed and built "Spytrail", a 500-point Hard AWS challenge for the DEF CON 33 Cloud Village
+    CTF. Players start with low-privileged credentials and follow CloudTrail, KMS encryption context,
+    and a rogue Lambda function to escalate and recover the flag. "Even CloudTrail lies."
+  points:
+    - Full challenge infrastructure deployed with Terraform, plus deployment guide
+    - Story, hints, and complete solution write-up
+    - Services used are S3, CloudTrail, KMS, Lambda, IAM, STS, and DynamoDB
+  tags: [AWS, Terraform, CloudTrail, Cloud Forensics, CTF]
+
 - title: SigmaForage
   featured: true
   repo: https://github.com/aakashraman/SigmaForage
@@ -34,6 +58,7 @@
   tags: [Python, Certbot, Namecheap API, Phishing Simulation]
 
 - title: SOAR Python Toolkit
+  featured: true
   repo: https://github.com/aakashraman/soarsamplepythonscripts
   summary: >-
     Python scripts for common SOAR use cases that speed up SOC triage and incident response.

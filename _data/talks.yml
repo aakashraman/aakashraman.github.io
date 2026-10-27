@@ -1,3 +1,25 @@
+# Conferences & talks, newest first. `url` and `points` are optional.
+- title: Attended the SANS DFIR Summit 2026
+  event: SANS DFIR Summit 2026
+  location: Attendee
+  summary: >-
+    My first SANS DFIR Summit: technical talks, two hands-on workshops, and great conversations with
+    DFIR and threat hunting practitioners, plus a signed copy of Joshua Wright's Dynamic IR.
+  points:
+    - "Keynotes by Heather Barnhart and Jason Higley on the digital evidence behind high-profile cases"
+    - "Talks on hunting the Squidoor backdoor, a Scattered Spider vSphere intrusion, EDR ransomware blind spots, and OAuth token theft"
+    - "Workshops tracing a full intrusion with Velociraptor and decoding an obfuscated Cobalt Strike beacon"
+
+- title: "Spytrail: Cloud Village CTF challenge"
+  event: DEF CON 33 · Cloud Village
+  location: Las Vegas, NV
+  url: https://github.com/cloud-village/defcon-33-ctf/tree/main/spytrail
+  link_label: View challenge
+  summary: >-
+    Designed and built a 500-point Hard AWS forensics challenge for the Cloud Village CTF. Players
+    trace CloudTrail, KMS encryption context, and a rogue Lambda function to escalate privileges and
+    recover the flag.
+
 - title: "Think You're Stealthy? How to Detect Attacks in AD"
   event: BSidesCharm 2025
   location: Baltimore, MD
