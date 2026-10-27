@@ -1,0 +1,17 @@
+# Recent highlights (newest first). Shown on the home page; remove all entries to hide the section.
+- title: Earned the GIAC Network Forensic Analyst (GNFA) — scored 91%
+  tag: GNFA · FOR572
+  summary: >-
+    The network counterpart to GCFA: protocol analysis (HTTP, DNS, SMTP, SMB, FTP), NetFlow,
+    SOF-ELK and Arkime, wireless forensics, and network protocol reverse engineering, with plenty of
+    command-line packet and log wrangling in tshark, tcpdump, jq, and awk.
+  points:
+    - End-to-end network investigations, from capture to capstone
+    - Made possible by Morgan Stanley and the SANS Institute
+
+- title: Earned the GIAC Certified Forensic Analyst (GCFA)
+  tag: GCFA · FOR508
+  summary: >-
+    Six months of preparation for one of the most challenging exams I've taken, covering NTFS file
+    system forensics, timeline analysis, memory forensics, and detecting anti-forensics techniques for
+    Windows incident response and threat hunting.
