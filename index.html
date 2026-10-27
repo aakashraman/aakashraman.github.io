@@ -11,10 +11,13 @@ layout: default
 <section class="hero">
   <div class="container hero-grid">
     <div>
-      <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Detection Engineer @ Morgan Stanley</span>
+      <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Threat Hunt &amp; Cyber Detection @ Morgan Stanley</span>
       <h1>Aakash Raman</h1>
-      <p class="role"><strong>Detection Engineer</strong> · Threat Hunter · DFIR Practitioner</p>
-      <p class="lede">I build detections and hunt for adversaries, with a purple-team mindset: understand how attacks really work, then make sure they get caught.</p>
+      <p class="role"><strong>Detection &amp; Response Engineer</strong></p>
+      <ul class="disciplines" aria-label="Focus areas">
+        <li>Threat Hunting</li><li>Incident Response</li><li>Malware Analysis</li><li>Digital Forensics</li>
+      </ul>
+      <p class="lede">I build detections, hunt adversaries, and investigate intrusions end to end, from the first alert to the last forensic artifact.</p>
       <div class="hero-cta">
         <a class="btn btn-primary" href="{{ site.resume | relative_url }}" target="_blank" rel="noopener"><i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Download résumé</a>
         <a class="btn" href="{{ site.linkedin_profile }}" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
@@ -42,6 +45,59 @@ layout: default
   </div>
 </div>
 
+<section class="section" id="about">
+  <div class="container about-grid">
+    <div>
+      <p class="kicker">About</p>
+      <h2>Finding what others miss</h2>
+      <div class="prose" style="margin-top:20px">
+        <p>I'm a <strong>Detection &amp; Response Engineer on Morgan Stanley's Threat Hunt and Cyber Detection team</strong>, where I write detections, hunt for threats, and support incident response across the firm.</p>
+        <p>My path runs through incident response with <strong>IBM X-Force</strong>, cloud security at Atlas Systems, and security operations at Hevo Data. I hold a <strong>Master of Engineering in Cybersecurity from the University of Maryland</strong> and GIAC's forensic analyst certifications, <strong>GCFA and GNFA</strong>.</p>
+        <p>Outside work I speak at conferences, write about forensics and threat hunting, build open-source detection tooling, and compete in blue-team CTFs.</p>
+      </div>
+    </div>
+    <div class="term" aria-label="Profile summary">
+      <div class="term-bar"><span></span><span></span><span></span><em>analyst@soc: ~</em></div>
+<pre class="term-body"><span class="p">$</span> whoami
+aakash.raman
+<span class="p">$</span> cat profile.yml
+<span class="k">role:</span>     Detection &amp; Response Engineer
+<span class="k">team:</span>     Threat Hunt &amp; Cyber Detection
+<span class="k">org:</span>      Morgan Stanley
+<span class="k">focus:</span>
+  - threat-hunting
+  - incident-response
+  - malware-analysis
+  - digital-forensics
+<span class="k">giac:</span>     [GCFA, GNFA, GCIH, GCCC, GSEC, GFACT]
+<span class="k">location:</span> Baltimore, MD
+<span class="p">$</span> <span class="cursor" aria-hidden="true"></span></pre>
+    </div>
+  </div>
+</section>
+
+<section class="section soft" id="capabilities">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="kicker">What I do</p>
+        <h2>Detect. Hunt. Respond. Investigate.</h2>
+        <p class="section-sub">The full detection-and-response lifecycle, from writing the rule that fires to reconstructing what happened after it does.</p>
+      </div>
+    </div>
+    <div class="grid-3">
+      {%- for c in site.data.capabilities %}
+      <article class="card cap">
+        <div class="card-top"><span class="card-icon"><i class="{{ c.icon }}" aria-hidden="true"></i></span><span class="op">{{ c.op }}</span></div>
+        <h3>{{ c.name }}</h3>
+        <p>{{ c.summary }}</p>
+        <ul class="tags">{% for t in c.tools %}<li class="tag">{{ t }}</li>{% endfor %}</ul>
+      </article>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
 {% if site.data.updates and site.data.updates.size > 0 %}
 <section class="section" id="updates">
   <div class="container">
@@ -65,26 +121,6 @@ layout: default
   </div>
 </section>
 {% endif %}
-
-<section class="section" id="about">
-  <div class="container about-grid">
-    <div>
-      <p class="kicker">About</p>
-      <h2>Defending by thinking like an attacker</h2>
-      <div class="prose" style="margin-top:20px">
-        <p>I'm a <strong>Detection Engineer on Morgan Stanley's Threat Hunt and Cyber Detection team</strong>, where I write detections, hunt for threats, and support incident response across the firm.</p>
-        <p>Before that I worked in cloud security at Atlas Systems, incident response with <strong>IBM X-Force</strong>, and security operations at Hevo Data. I hold a <strong>Master of Engineering in Cybersecurity from the University of Maryland</strong>.</p>
-        <p>Outside work I speak at conferences, write about forensics and threat hunting, build open-source detection tooling, and compete in blue-team CTFs.</p>
-      </div>
-    </div>
-    <div class="focus-list">
-      <div class="focus"><i class="fa-solid fa-crosshairs" aria-hidden="true"></i><div><b>Detection Engineering</b><span>Sigma, YARA, Elastic, Splunk; detections as code</span></div></div>
-      <div class="focus"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i><div><b>Threat Hunting</b><span>Hypothesis-driven hunts mapped to MITRE ATT&amp;CK</span></div></div>
-      <div class="focus"><i class="fa-solid fa-fingerprint" aria-hidden="true"></i><div><b>DFIR</b><span>Windows, Linux &amp; network forensics (GCFA, GNFA)</span></div></div>
-      <div class="focus"><i class="fa-solid fa-circle-half-stroke" aria-hidden="true"></i><div><b>Purple Teaming</b><span>Adversary emulation with Atomic Red Team &amp; C2 labs</span></div></div>
-    </div>
-  </div>
-</section>
 
 <section class="section soft" id="experience">
   <div class="container">

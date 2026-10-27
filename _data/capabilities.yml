@@ -1,0 +1,36 @@
+# Core disciplines shown in the "What I do" section. `op` is the mono label on each card.
+- name: Detection Engineering
+  op: DETECT
+  icon: fa-solid fa-crosshairs
+  summary: Detections as code with Sigma and YARA, tuned against real telemetry to keep signal high and false positives low.
+  tools: [Sigma, YARA, Elastic, Splunk, QRadar]
+
+- name: Threat Hunting
+  op: HUNT
+  icon: fa-solid fa-magnifying-glass
+  summary: Hypothesis-driven hunts mapped to MITRE ATT&CK across endpoint, network, and cloud telemetry.
+  tools: [MITRE ATT&CK, Velociraptor, OpenCTI, ELK]
+
+- name: Incident Response
+  op: RESPOND
+  icon: fa-solid fa-shield-halved
+  summary: Scoping, containment, and playbooks, from IBM X-Force IR engagements to enterprise security operations.
+  tools: [CrowdStrike Falcon, TheHive, Cortex, SOAR]
+
+- name: Malware Analysis
+  op: ANALYZE
+  icon: fa-solid fa-bug
+  summary: Static and behavioral triage of Windows and Android malware, turning findings into signatures and detections.
+  tools: [YARA, Static analysis, Behavioral analysis]
+
+- name: Digital Forensics
+  op: INVESTIGATE
+  icon: fa-solid fa-fingerprint
+  summary: Windows, Linux, memory, and network forensics, including NTFS artifacts, super-timelines, and packet analysis.
+  tools: [KAPE, Autopsy, FTK Imager, SOF-ELK, Arkime, tshark]
+
+- name: Purple Teaming
+  op: EMULATE
+  icon: fa-solid fa-circle-half-stroke
+  summary: Emulating adversaries to validate detections, using Atomic Red Team and C2 frameworks in lab environments.
+  tools: [Atomic Red Team, Mythic C2, GoPhish]

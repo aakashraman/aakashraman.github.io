@@ -1,6 +1,6 @@
 title: Aakash Raman
-description: Detection Engineer at Morgan Stanley — threat hunting, detection engineering, and DFIR.
-tagline: Detection Engineer · Threat Hunter · DFIR
+description: Detection & Response Engineer at Morgan Stanley focused on threat hunting, incident response, malware analysis, and digital forensics.
+tagline: Detection & Response Engineer · Threat Hunting · Incident Response · Malware Analysis · DFIR
 url: https://aakashraman.github.io
 lang: en-US
 email: aakashr93@gmail.com
@@ -29,10 +29,10 @@ plugins:
 
 nav:
   - { name: About, link: "/#about" }
+  - { name: Expertise, link: "/#capabilities" }
   - { name: Experience, link: "/#experience" }
   - { name: Certifications, link: "/#certifications" }
   - { name: Projects, link: /projects/ }
-  - { name: Writing, link: "/#writing" }
   - { name: Contact, link: /contact/ }
 
 exclude:
