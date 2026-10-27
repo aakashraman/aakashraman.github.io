@@ -1,0 +1,10 @@
+highlights:
+  - { rank: "#1", event: SANS x WiCyS CTF '24 }
+  - { rank: "#8", event: Amazon x WiCyS CTF '24 }
+  - { rank: "#9", event: LevelEffect CTF 2024 }
+  - { rank: "#34", event: "OffSec Gauntlet: Echo Response '25", note: of 4,267 }
+  - { rank: "#80", event: Huntress CTF 2024 }
+platforms:
+  - { name: TryHackMe, note: Top 1% · 100+ rooms }
+  - { name: HackTheBox, note: Defensive Sherlocks }
+  - { name: CyberDefenders, note: Blue team labs }

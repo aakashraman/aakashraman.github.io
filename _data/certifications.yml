@@ -1,0 +1,38 @@
+# Certification groups. `abbr` shows as the badge; `year` is optional.
+groups:
+  - group: GIAC (SANS)
+    items:
+      - { abbr: GCFA, name: GIAC Certified Forensic Analyst }
+      - { abbr: GNFA, name: GIAC Network Forensic Analyst }
+      - { abbr: GCIH, name: GIAC Certified Incident Handler, year: 2025–2029 }
+      - { abbr: GCCC, name: GIAC Critical Controls Certification, year: 2025–2029 }
+      - { abbr: GSEC, name: GIAC Security Essentials, year: 2025–2029 }
+      - { abbr: GFACT, name: GIAC Foundational Cybersecurity Technologies, year: 2025–2029 }
+
+  - group: Cloud Security
+    items:
+      - { abbr: AWS-SCS, name: AWS Certified Security – Specialty, year: 2025–2028 }
+      - { abbr: CCSK, name: Certificate of Cloud Security Knowledge v5, year: 2025 }
+      - { abbr: AWS-SAA, name: AWS Certified Solutions Architect – Associate, year: 2023 }
+
+  - group: Defensive Security
+    items:
+      - { abbr: SAL1, name: TryHackMe Security Analyst Level 1, year: 2025–2028 }
+      - { abbr: MS-XDR, name: "Microsoft Applied Skills: Defender XDR", year: 2025 }
+      - { abbr: CCD, name: Certified CyberDefender, year: 2024 }
+      - { abbr: CySA+, name: CompTIA Cybersecurity Analyst, year: 2023 }
+      - { abbr: Sec+, name: CompTIA Security+ }
+      - { abbr: IBM, name: IBM Cybersecurity Analyst }
+
+  - group: Offensive & AppSec
+    items:
+      - { abbr: PT1, name: TryHackMe Penetration Tester Level 1, year: 2025 }
+      - { abbr: CASP+, name: CompTIA Advanced Security Practitioner, year: 2023 }
+      - { abbr: PenTest+, name: CompTIA PenTest+, year: 2023 }
+      - { abbr: CASA, name: Certified API Security Analyst, year: 2024 }
+      - { abbr: CAP, name: Certified AppSec Practitioner, year: 2024 }
+      - { abbr: CNSP, name: Certified Network Security Practitioner, year: 2024 }
+      - { abbr: OWASP, name: "OWASP API Security Top 10 & API Security Fundamentals", year: 2024 }
+
+in_progress:
+  - { abbr: CISSP, name: Certified Information Systems Security Professional }

@@ -1,0 +1,33 @@
+---
+layout: default
+title: Projects
+description: Open-source detection, DFIR, and security automation projects by Aakash Raman.
+permalink: /projects/
+---
+<section class="page-head">
+  <div class="container">
+    <p class="kicker">Projects</p>
+    <h1>Projects</h1>
+    <p>Tools, labs, and research in detection engineering, DFIR, and security automation.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid-2">
+      {%- for p in site.data.projects %}
+      <article class="card">
+        <div class="card-top">
+          <span class="card-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></span>
+          {% if p.repo %}<a href="{{ p.repo }}" target="_blank" rel="noopener" aria-label="{{ p.title }} on GitHub"><i class="fa-brands fa-github"></i> Repo</a>{% endif %}
+        </div>
+        <h3>{{ p.title }}</h3>
+        <p>{{ p.summary }}</p>
+        {% if p.points %}<ul>{% for pt in p.points %}<li>{{ pt }}</li>{% endfor %}</ul>{% endif %}
+        <ul class="tags">{% for t in p.tags %}<li class="tag">{{ t }}</li>{% endfor %}</ul>
+      </article>
+      {%- endfor %}
+    </div>
+    <p class="section-sub" style="margin-top:32px">More on <a href="{{ site.github_profile }}" target="_blank" rel="noopener">GitHub</a>.</p>
+  </div>
+</section>

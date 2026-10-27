@@ -1,106 +1,45 @@
-{% case site.color-scheme %}
-  {% when "", nil, false, 0, empty %}
-    {% assign ColorScheme = "auto" %}
-  {% else %}
-    {% assign ColorScheme = site.color-scheme %}
-{% endcase %}
-
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}" dir="ltr">
+<html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="theme-color" content="#ffffff">
 {% seo %}
-    <link rel="stylesheet" href="{{ "/assets/css/colors-ColorScheme.css?v=" | replace: "ColorScheme", ColorScheme | append: site.github.build_revision | relative_url }}">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource-variable/inter@5.0.16/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono@5.0.18/500.css">
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-
-    <link rel="preload" href="{{site.logo | relative_url}}" as="image">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
     {% include head-custom.html %}
   </head>
   <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-    <div class="wrapper">
-      <div class="sidebar">
-        <header role="banner">
-          {% if site.logo %}
-            {% assign logo_url = site.logo %}
-            {% if logo_url contains 'http' %}
-              <img class="img-circle" id="profile-picture" src="{{logo_url}}" alt="{{ site.title | default: site.github.repository_name }} - Profile Picture" loading="eager" width="200" height="200" data-linkedin="{{ site.linkedin_username }}" onerror="this.src='/assets/img/1720405937210.jpeg'">
-            {% else %}
-              <img class="img-circle" id="profile-picture" src="{{site.logo | relative_url}}" alt="{{ site.title | default: site.github.repository_name }} - Profile Picture" loading="eager" width="200" height="200" data-linkedin="{{ site.linkedin_username }}">
-            {% endif %}
-          {% endif %}
+    <a href="#main" class="skip-link">Skip to content</a>
 
-          {% if site.blank_title %}
-            <h1>{{ site.title | default: site.github.repository_name }}</h1>
-          {% else %}
-            <h1><a href="{{ "/" | absolute_url }}" aria-label="Home">{{ site.title | default: site.github.repository_name }}</a></h1>
-          {% endif %}
-
-          {% if site.email %}
-            <p class="addr"><i class="fa-regular fa-envelope" aria-hidden="true"></i>&nbsp;<a href="mailto:{{ site.email }}" aria-label="Email {{ site.email }}">{{ site.email }}</a></p>
-          {% endif %}
-
-          <p>{{ site.description | default: site.github.project_tagline }}</p>
-
-          {% include sidebar.html %}
-
-        </header>
-
-        {% include links-mobile.html %}
-
-        <div class="sidebar-footer">
-          {%- include footer.html -%}
-        </div>
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="{{ "/" | relative_url }}" aria-label="Home">
+          <span class="brand-mark" aria-hidden="true">AR</span>
+          <span>{{ site.title }}</span>
+        </a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        <label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span></label>
+        <nav class="nav-links" aria-label="Primary">
+          {%- for item in site.nav %}
+          <a href="{{ item.link | relative_url }}"{% if page.url == item.link %} aria-current="page"{% endif %}>{{ item.name }}</a>
+          {%- endfor %}
+          <a class="btn btn-sm btn-primary" href="{{ site.resume | relative_url }}" target="_blank" rel="noopener">Résumé</a>
+        </nav>
       </div>
-      <main id="main-content" role="main">
-        <section>
+    </header>
 
-        {{ content }}
+    <main id="main">
+      {{ content }}
+    </main>
 
-        </section>
-      </main>
-      <footer role="contentinfo">
-        {%- include footer.html -%}
-      </footer>
-    </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-    <script>
-      // Fetch LinkedIn profile picture dynamically
-      (function() {
-        const profileImg = document.getElementById('profile-picture');
-        if (!profileImg) return;
-        
-        const linkedinUsername = profileImg.getAttribute('data-linkedin');
-        if (!linkedinUsername) return;
-        
-        // Use LinkedIn's public profile image API via proxy or direct URL
-        // Note: LinkedIn doesn't provide a direct public API, so we'll use a fallback approach
-        // Option 1: Use LinkedIn's image URL format (may require authentication)
-        // Option 2: Use a proxy service
-        // Option 3: Keep local image as fallback
-        
-        // Try to fetch from LinkedIn using the latest profile picture URL
-        // LinkedIn profile picture URLs are dynamic - update this when your profile picture changes
-        const linkedinImageUrl = `https://media.licdn.com/dms/image/v2/D4E03AQFMn02lA1B5fQ/profile-displayphoto-shrink_200_200/0/1764607086039`;
-        
-        // Create a new image to test if LinkedIn image loads
-        const testImg = new Image();
-        testImg.onload = function() {
-          profileImg.src = linkedinImageUrl;
-          profileImg.setAttribute('data-updated', 'true');
-        };
-        testImg.onerror = function() {
-          // Keep the original image if LinkedIn image fails to load
-          console.log('Using configured profile picture');
-        };
-        testImg.src = linkedinImageUrl;
-      })();
-    </script>
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© {{ site.time | date: "%Y" }} {{ site.title }} · Baltimore, MD</p>
+        <div class="socials">{% include socials.html %}</div>
+      </div>
+    </footer>
   </body>
 </html>

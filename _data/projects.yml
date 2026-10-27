@@ -1,0 +1,79 @@
+# `featured: true` projects also appear on the home page.
+- title: SigmaForage
+  featured: true
+  repo: https://github.com/aakashraman/SigmaForage
+  summary: >-
+    "One Sigma rule. Every SIEM." A CLI that converts Sigma detection rules into native queries for
+    18+ SIEM and XDR platforms (Splunk SPL, Elastic, Sentinel KQL, QRadar AQL, CrowdStrike and more)
+    using the official sigma-cli / pySigma backends.
+  points:
+    - Convert one rule to several SIEMs in a single command
+    - Accepts a rule path or stdin and outputs ready-to-paste queries
+    - Ships 60+ SigmaHQ threat-hunting rules for testing and demos
+  tags: [Python, Sigma, pySigma, Detection Engineering]
+
+- title: Mini SOC + Mythic C2 Detection Lab
+  featured: true
+  repo: https://github.com/aakashraman/mydfir30-Day-Challenege
+  summary: >-
+    30-day MyDFIR challenge: built a mini SOC with a Mythic C2 server and osTicket ticketing to
+    practice threat hunting, security operations, and detection engineering end to end.
+  tags: [ELK, Mythic C2, osTicket, Threat Hunting]
+
+- title: GoPhish Auto-Deploy
+  featured: true
+  repo: https://github.com/aakashraman/GoPhish-Deployment
+  summary: >-
+    One-shot deployment of GoPhish on a DigitalOcean droplet with a Namecheap domain, including
+    Let's Encrypt certificates via DNS challenge and optional Namecheap API DNS automation.
+  points:
+    - Installs dependencies and pulls the latest GoPhish release
+    - Configures admin access and TLS certificate paths
+    - Issues certificates with Certbot using a DNS-01 challenge
+    - Optionally creates Namecheap TXT records automatically
+  tags: [Python, Certbot, Namecheap API, Phishing Simulation]
+
+- title: SOAR Python Toolkit
+  repo: https://github.com/aakashraman/soarsamplepythonscripts
+  summary: >-
+    Python scripts for common SOAR use cases that speed up SOC triage and incident response.
+  points:
+    - Extract IOCs from email headers, bodies, and attachments
+    - Enrich IPs, domains, hashes, and URLs via VirusTotal, AbuseIPDB, and more
+    - Detect phishing URLs and auto-block malicious IPs
+    - Generate incident reports (PDF / JSON / HTML) with timelines and IOCs
+  tags: [Python, REST APIs, SOAR, Threat Intel]
+
+- title: Log Analysis Scripts
+  repo: https://github.com/aakashraman/loganalysispythonscripts
+  summary: Small Python utilities for pulling useful information out of logs during investigations.
+  tags: [Python, Log Analysis]
+
+- title: Visualizing Lateral Movement
+  summary: Visualization of lateral-movement patterns using Velociraptor JSON logs, Python, and Splunk.
+  tags: [Velociraptor, Splunk, DFIR]
+
+- title: DFIR Investigation Report
+  repo: https://github.com/aakashraman/enpm687finalreport
+  summary: Forensic analysis of a suspected-compromised disk image covering malware identification and evidence extraction.
+  tags: [Digital Forensics, Incident Response]
+
+- title: Penetration Testing Report
+  repo: https://github.com/aakashraman/Penetration-Testing-Report
+  summary: End-to-end security assessment combining penetration testing, incident response, and remediation.
+  tags: [Penetration Testing]
+
+- title: AWS Security Architecture
+  repo: https://github.com/aakashraman/AWS-Security-Architecture
+  summary: Cloud security architecture built on zero-trust principles and defense in depth.
+  tags: [AWS, Cloud Security, Zero Trust]
+
+- title: Android Malware Analysis Trends
+  repo: https://github.com/aakashraman/AndroidMalwareAnalysisTrends
+  summary: Research paper on trends and techniques in Android malware detection and analysis.
+  tags: [Malware Analysis, Research]
+
+- title: PDF Metadata Extractor
+  repo: https://github.com/aakashraman/pdfmetadataextractor
+  summary: Utility to extract metadata from PDF files for forensic triage.
+  tags: [Python, Forensics]

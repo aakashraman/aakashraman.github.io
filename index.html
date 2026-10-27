@@ -1,0 +1,266 @@
+---
+layout: default
+---
+{%- assign cert_count = 0 -%}
+{%- assign giac_count = 0 -%}
+{%- for g in site.data.certifications.groups -%}
+  {%- assign cert_count = cert_count | plus: g.items.size -%}
+  {%- if g.group contains "GIAC" -%}{%- assign giac_count = g.items.size -%}{%- endif -%}
+{%- endfor -%}
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Detection Engineer @ Morgan Stanley</span>
+      <h1>Aakash Raman</h1>
+      <p class="role"><strong>Detection Engineer</strong> · Threat Hunter · DFIR Practitioner</p>
+      <p class="lede">I build detections and hunt for adversaries, with a purple-team mindset: understand how attacks really work, then make sure they get caught.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="{{ site.resume | relative_url }}" target="_blank" rel="noopener"><i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Download résumé</a>
+        <a class="btn" href="{{ site.linkedin_profile }}" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+        <a class="btn" href="{{ site.github_profile }}" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+      </div>
+      <div class="hero-meta">
+        <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> {{ site.location }}</span>
+        <span><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:{{ site.email }}">{{ site.email }}</a></span>
+        <span><i class="fa-solid fa-award" aria-hidden="true"></i> LinkedIn Top Information Security Voice</span>
+      </div>
+    </div>
+    <div class="portrait">
+      <img src="{{ site.logo | relative_url }}" alt="Portrait of Aakash Raman" width="280" height="280">
+      <div class="portrait-badge"><b>BSidesCharm 2025</b><span>Speaker · AD attack detection</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="stats">
+    <div class="stat"><b>{{ giac_count }}×</b><span>GIAC certifications</span></div>
+    <div class="stat"><b>{{ cert_count }}</b><span>Industry certifications</span></div>
+    <div class="stat"><b>#1</b><span>SANS × WiCyS CTF '24</span></div>
+    <div class="stat"><b>Top 1%</b><span>TryHackMe</span></div>
+  </div>
+</div>
+
+<section class="section" id="about">
+  <div class="container about-grid">
+    <div>
+      <p class="kicker">About</p>
+      <h2>Defending by thinking like an attacker</h2>
+      <div class="prose" style="margin-top:20px">
+        <p>I'm a <strong>Detection Engineer on Morgan Stanley's Threat Hunt and Cyber Detection team</strong>, where I write detections, hunt for threats, and support incident response across the firm.</p>
+        <p>Before that I worked in cloud security at Atlas Systems, incident response with <strong>IBM X-Force</strong>, and security operations at Hevo Data. I hold a <strong>Master of Engineering in Cybersecurity from the University of Maryland</strong>.</p>
+        <p>Outside work I speak at conferences, write about forensics and threat hunting, build open-source detection tooling, and compete in blue-team CTFs.</p>
+      </div>
+    </div>
+    <div class="focus-list">
+      <div class="focus"><i class="fa-solid fa-crosshairs" aria-hidden="true"></i><div><b>Detection Engineering</b><span>Sigma, YARA, Elastic, Splunk; detections as code</span></div></div>
+      <div class="focus"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i><div><b>Threat Hunting</b><span>Hypothesis-driven hunts mapped to MITRE ATT&amp;CK</span></div></div>
+      <div class="focus"><i class="fa-solid fa-fingerprint" aria-hidden="true"></i><div><b>DFIR</b><span>Windows, Linux &amp; network forensics (GCFA, GNFA)</span></div></div>
+      <div class="focus"><i class="fa-solid fa-circle-half-stroke" aria-hidden="true"></i><div><b>Purple Teaming</b><span>Adversary emulation with Atomic Red Team &amp; C2 labs</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section soft" id="experience">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="kicker">Experience</p>
+        <h2>Where I've worked</h2>
+      </div>
+      <a class="link-arrow" href="{{ site.resume | relative_url }}" target="_blank" rel="noopener">Full résumé →</a>
+    </div>
+    <div class="timeline">
+      {%- for job in site.data.experience %}
+      <article class="job{% if job.current %} current{% endif %}">
+        <div class="job-when">
+          <b>{{ job.dates }}</b>{{ job.location }}
+          {% if job.current %}<br><span class="pill-now">Current</span>{% endif %}
+        </div>
+        <div>
+          <h3>{{ job.role }}</h3>
+          <p class="org">{{ job.org }}</p>
+          {% if job.summary %}<p class="summary">{{ job.summary }}</p>{% endif %}
+          {% if job.points %}<ul>{% for p in job.points %}<li>{{ p }}</li>{% endfor %}</ul>{% endif %}
+          {% if job.tags %}<ul class="tags">{% for t in job.tags %}<li class="tag">{{ t }}</li>{% endfor %}</ul>{% endif %}
+        </div>
+      </article>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="certifications">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="kicker">Certifications</p>
+        <h2>{{ cert_count }} certifications across defense, cloud &amp; offense</h2>
+      </div>
+      <a class="link-arrow" href="{{ site.credly_profile }}" target="_blank" rel="noopener"><i class="fa-solid fa-certificate" aria-hidden="true"></i> Verify on Credly →</a>
+    </div>
+    <div class="cert-groups">
+      {%- for g in site.data.certifications.groups %}
+      <div class="cert-group">
+        <h3>{{ g.group }} <small>{{ g.items.size }}</small></h3>
+        {%- for c in g.items %}
+        <div class="cert">
+          <span class="cert-badge">{{ c.abbr }}</span>
+          <span class="cert-name">{{ c.name }}</span>
+          {% if c.year %}<span class="cert-year">{{ c.year }}</span>{% endif %}
+        </div>
+        {%- endfor %}
+      </div>
+      {%- endfor %}
+    </div>
+    {% if site.data.certifications.in_progress %}
+    <div class="cert-progress">
+      <span>In progress:</span>
+      {% for c in site.data.certifications.in_progress %}<span class="cert-badge" title="{{ c.name }}">{{ c.abbr }}</span>{% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+{% if site.data.updates and site.data.updates.size > 0 %}
+<section class="section soft" id="updates">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="kicker">Recent</p>
+        <h2>What I've been up to</h2>
+      </div>
+      <a class="link-arrow" href="{{ site.linkedin_profile }}recent-activity/all/" target="_blank" rel="noopener">More on LinkedIn →</a>
+    </div>
+    <div class="grid-3">
+      {%- for u in site.data.updates %}
+      {% if u.url %}<a class="card" href="{{ u.url }}" target="_blank" rel="noopener">{% else %}<div class="card">{% endif %}
+        <div class="card-top"><span class="card-meta">{{ u.date }}</span>{% if u.tag %}<span class="tag">{{ u.tag }}</span>{% endif %}</div>
+        <h3>{{ u.title }}</h3>
+        {% if u.summary %}<p>{{ u.summary }}</p>{% endif %}
+      {% if u.url %}</a>{% else %}</div>{% endif %}
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="kicker">Projects</p>
+        <h2>Open-source tooling</h2>
+      </div>
+      <a class="link-arrow" href="{{ '/projects/' | relative_url }}">All projects →</a>
+    </div>
+    <div class="grid-3">
+      {%- assign featured = site.data.projects | where: "featured", true %}
+      {%- for p in featured %}
+      <a class="card" href="{{ p.repo | default: '/projects/' }}"{% if p.repo %} target="_blank" rel="noopener"{% endif %}>
+        <div class="card-top"><span class="card-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></span>{% if p.repo %}<i class="fa-brands fa-github" aria-hidden="true"></i>{% endif %}</div>
+        <h3>{{ p.title }}</h3>
+        <p>{{ p.summary }}</p>
+        <ul class="tags">{% for t in p.tags %}<li class="tag">{{ t }}</li>{% endfor %}</ul>
+      </a>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section soft" id="speaking">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="kicker">Speaking</p>
+        <h2>Talks &amp; community</h2>
+      </div>
+    </div>
+    <div class="grid-2">
+      {%- for t in site.data.talks %}
+      <a class="card talk" href="{{ t.url }}" target="_blank" rel="noopener">
+        <span class="card-meta">{{ t.event }}</span>
+        <h3 style="margin-top:12px">{{ t.title }}</h3>
+        <p>{{ t.summary }}</p>
+        <span class="card-link">{{ t.link_label }} →</span>
+      </a>
+      {%- endfor %}
+    </div>
+    <p class="section-sub" style="margin-top:20px">Also volunteered at BSidesCharm Baltimore 2024.</p>
+  </div>
+</section>
+
+<section class="section" id="ctf">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="kicker">Competitions</p>
+        <h2>CTF results</h2>
+      </div>
+    </div>
+    <div class="ctf-row">
+      {%- for c in site.data.ctf.highlights %}
+      <div class="ctf{% if c.rank == '#1' %} gold{% endif %}">
+        <b>{{ c.rank }}</b><span>{{ c.event }}</span>{% if c.note %}<small>{{ c.note }}</small>{% endif %}
+      </div>
+      {%- endfor %}
+    </div>
+    <div class="platforms">
+      {%- for p in site.data.ctf.platforms %}
+      <span class="platform"><b>{{ p.name }}</b><span>{{ p.note }}</span></span>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section soft" id="writing">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="kicker">Writing</p>
+        <h2>Articles on Medium</h2>
+        <p class="section-sub">Practical write-ups on forensics, threat hunting, and detection.</p>
+      </div>
+      <a class="link-arrow" href="{{ site.medium_profile }}" target="_blank" rel="noopener">All articles →</a>
+    </div>
+    <div class="posts">
+      {%- for w in site.data.writing %}
+      <a class="post" href="{{ w.url }}" target="_blank" rel="noopener">
+        <time>{{ w.date }}</time><b>{{ w.title }}</b><span class="tag">{{ w.tag }}</span>
+      </a>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="education">
+  <div class="container">
+    <div class="section-head"><div><p class="kicker">Education</p><h2>Education</h2></div></div>
+    <div class="grid-2">
+      <div class="card edu">
+        <span class="card-icon"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></span>
+        <div><h3>University of Maryland, College Park</h3><p>Master of Engineering in Cybersecurity</p></div>
+      </div>
+      <div class="card edu">
+        <span class="card-icon"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></span>
+        <div><h3>Vellore Institute of Technology</h3><p>B.Tech, Computer Science &amp; Engineering, specialization in Information Security</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;border-top:0">
+  <div class="container">
+    <div class="cta">
+      <div>
+        <h2>Let's talk security</h2>
+        <p>Open to research collaborations, speaking, mentorship, and CTF teams.</p>
+      </div>
+      <div class="hero-cta" style="margin-top:0">
+        <a class="btn" href="mailto:{{ site.email }}"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Email me</a>
+        <a class="btn btn-ghost" href="{{ site.linkedin_profile }}" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> Connect</a>
+      </div>
+    </div>
+  </div>
+</section>

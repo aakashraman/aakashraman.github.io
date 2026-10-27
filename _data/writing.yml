@@ -1,0 +1,29 @@
+# Medium articles, newest first.
+- title: Uncovering Linux Forensics Artifacts for Digital Forensics Investigators
+  date: Apr 2025
+  url: https://medium.com/@araman99/uncovering-linux-forensics-artifacts-for-digital-forensics-investigators-5bf6ab3f5e19
+  tag: DFIR
+- title: Advent of Cyber 2024 series (Days 1–4)
+  date: Dec 2024
+  url: https://medium.com/@araman99/advent-of-cyber-2024-day-1-maybe-soc-mas-music-he-thought-doesnt-come-from-a-store-37135233ed5b
+  tag: Walkthrough
+- title: Common Active Directory Attacks and Detection Techniques
+  date: Oct 2024
+  url: https://medium.com/@araman99/common-active-directory-attacks-and-detection-techniques-193411836d93
+  tag: Detection
+- title: TryHackMe APIWizards Breach Walkthrough
+  date: Aug 2024
+  url: https://medium.com/@araman99/tryhackme-apiwizards-breach-walkthrough-1984ca780121
+  tag: Walkthrough
+- title: Understanding the CrowdStrike Windows Outage — A Technical Guide
+  date: Jul 2024
+  url: https://medium.com/@araman99/understanding-the-crowdstrike-windows-outage-a-technical-guide-c3d48c3b241d
+  tag: Analysis
+- title: Mastering Network Threat Hunting — A Foundational Guide
+  date: Jul 2024
+  url: https://medium.com/@araman99/mastering-network-threat-hunting-a-foundational-guide-f7b5b5338175
+  tag: Threat Hunting
+- title: Uncovering Windows Forensics Artefacts for Digital Forensics Investigators
+  date: Jun 2024
+  url: https://medium.com/@araman99/uncovering-windows-forensics-artefacts-for-digital-forensics-investigators-e0b75f01d086
+  tag: DFIR

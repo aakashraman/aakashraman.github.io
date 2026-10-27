@@ -1,0 +1,18 @@
+- title: "Think You're Stealthy? How to Detect Attacks in AD"
+  event: BSidesCharm 2025
+  location: Baltimore, MD
+  url: https://lnkd.in/gT2PQmpT
+  link_label: Watch on YouTube
+  summary: >-
+    With Rachit Arora and Sai Sathvik Ruppa: how common Active Directory attack tools leave
+    forensic artifacts behind, and how defenders can use them to improve detections and
+    proactive log monitoring.
+
+- title: Introduction to Windows Malware Analysis
+  event: OWASP Mumbai Meetup · Oct 2024
+  location: Virtual
+  url: https://github.com/aakashraman/Slides-for-Cybersecurity-Talks
+  link_label: View slides
+  summary: >-
+    An introduction to triaging and analyzing Windows malware, from static analysis to behavioral
+    indicators.
