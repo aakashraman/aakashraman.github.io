@@ -1,4 +1,19 @@
 # `featured: true` projects also appear on the home page.
+- title: USBHawk — USB Forensics & Threat Hunting
+  featured: true
+  repo: https://github.com/aakashraman/usbhawk
+  summary: >-
+    Open-source USB forensics toolkit for Windows. Point it at a KAPE or Velociraptor triage and it scores
+    USB sessions for data theft, finds wiped USB evidence, generates hunting rules, and tracks a stick
+    across PCs.
+  points:
+    - "Sessions: every USB connection with device, user and drive letter, scored 0-100 with a reason for each point"
+    - "Tamper: sticks deleted from the registry but remembered elsewhere, cleared logs, USBOblivion runs"
+    - "Detections: 8 hunting rules generated for Sigma, Elastic and Microsoft Sentinel, replayable on collected logs"
+    - "Graph: links the same stick across PCs by its own serials, with Gephi and Neo4j exports"
+    - "Standalone Windows exe; validated on the NIST CFReDS Data Leakage case"
+  tags: [Python, DFIR, KAPE, Threat Hunting, Detection Engineering]
+
 - title: SOF-ELK — PECmd Prefetch Parser
   featured: true
   repo: https://github.com/philhagen/sof-elk/pull/404
