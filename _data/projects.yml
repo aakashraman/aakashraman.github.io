@@ -73,7 +73,6 @@
   tags: [Python, Certbot, Namecheap API, Phishing Simulation]
 
 - title: SOAR Python Toolkit
-  featured: true
   repo: https://github.com/aakashraman/soarsamplepythonscripts
   summary: >-
     Python scripts for common SOAR use cases that speed up SOC triage and incident response.
